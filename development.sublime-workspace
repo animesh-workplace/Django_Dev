@@ -1,0 +1,834 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"uniq",
+				"uniq_patients"
+			],
+			[
+				"data",
+				"data_json"
+			],
+			[
+				"tiny",
+				"tinymce_form"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"json",
+				"json_array"
+			],
+			[
+				"transo",
+				"transform"
+			],
+			[
+				"Str",
+				"Structure"
+			],
+			[
+				"pfam",
+				"pfam_result"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"pfa",
+				"pfam_result"
+			],
+			[
+				"Hug",
+				"Hugo_Symbol"
+			],
+			[
+				"str",
+				"structure_array"
+			],
+			[
+				"Hu",
+				"Hugo_Symbol"
+			],
+			[
+				"Row",
+				"Row_Index"
+			],
+			[
+				"sc",
+				"script"
+			],
+			[
+				"c",
+				"cactus_data"
+			],
+			[
+				"commo",
+				"common_genes"
+			],
+			[
+				"comm",
+				"common_genes"
+			],
+			[
+				"get",
+				"get_request"
+			],
+			[
+				"acc",
+				"acc_list"
+			],
+			[
+				"Total",
+				"Total_entries-_"
+			],
+			[
+				"colo",
+				"color_scheme1"
+			],
+			[
+				"type",
+				"type_of_variant1"
+			],
+			[
+				"remove",
+				"remove_rows"
+			],
+			[
+				"appen",
+				"appendHTML"
+			],
+			[
+				"lolo",
+				"lolipop_remove"
+			],
+			[
+				"loli",
+				"lolipop_"
+			],
+			[
+				"intron",
+				"intron_data_test"
+			],
+			[
+				"intron_data",
+				"intron_data_test"
+			],
+			[
+				"inn",
+				"InnerHeight"
+			],
+			[
+				"Inn",
+				"InnerWidth"
+			],
+			[
+				"protein",
+				"protein_length"
+			],
+			[
+				"x_axis",
+				"x_axisper3"
+			],
+			[
+				"label",
+				"label_name"
+			],
+			[
+				"Va",
+				"Variant_Classification"
+			],
+			[
+				"labe",
+				"label_name"
+			],
+			[
+				"data1",
+				"data1_tooltip"
+			],
+			[
+				"our",
+				"ourRequest1"
+			],
+			[
+				"entry",
+				"entry_index"
+			],
+			[
+				"gne",
+				"gene_name"
+			],
+			[
+				"diff",
+				"diff_lolipop_snp_loc1"
+			],
+			[
+				"snp_",
+				"snp_num"
+			],
+			[
+				"arr",
+				"Array"
+			],
+			[
+				"tab",
+				"tabName"
+			],
+			[
+				"gene",
+				"gene_name"
+			],
+			[
+				"genes",
+				"genes_name"
+			],
+			[
+				"P",
+				"Protein_Change"
+			],
+			[
+				"too",
+				"data1_tootip"
+			],
+			[
+				"Scal",
+				"Scalelegend"
+			],
+			[
+				"Sc",
+				"Scalelegend"
+			],
+			[
+				"snp",
+				"snp_num"
+			],
+			[
+				"a",
+				"attr"
+			],
+			[
+				"select",
+				"selectAll"
+			],
+			[
+				"regions",
+				"regions_start"
+			],
+			[
+				"con",
+				"concat"
+			],
+			[
+				"tick",
+				"tick_values"
+			],
+			[
+				"tic",
+				"tick_values"
+			],
+			[
+				"regio",
+				"regions_end"
+			],
+			[
+				"scale",
+				"scaleLinear"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "all_development/settings.py",
+			"settings":
+			{
+				"buffer_size": 3697,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "apps/funding_theory/template/funding_theory/base.html",
+			"settings":
+			{
+				"buffer_size": 2815,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "apps/funding_theory/static/funding_theory/js/d3-append-html.js",
+			"settings":
+			{
+				"buffer_size": 229,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nJsPrettier\n----------\n\n  ┌────────────────────────────────────────────────────────────────────────────┐\n  │                     _     ____           _   _   _                         │\n  │                    | |___|  _ \\ _ __ ___| |_| |_(_) ___ _ __               │\n  │                 _  | / __| |_) | '__/ _ \\ __| __| |/ _ \\ '__|              │\n  │                | |_| \\__ \\  __/| | |  __/ |_| |_| |  __/ |                 │\n  │                 \\___/|___/_|   |_|  \\___|\\__|\\__|_|\\___|_|                 │\n  │                                                                            │\n  └────────────────────────────────────────────────────────────────────────────┘\n  \n  JsPrettier is a Sublime Text Plug-in for Prettier, the opinionated code formatter.\n  \n  ## Install Prettier\n  \n  If you installed Prettier (using the yarn or npm command below), you're all set... otherwise:\n  \n  If you've already installed Prettier (using a command below), you're all set... otherwise:\n  \n      # yarn (local):\n      yarn add prettier --dev\n  \n      # yarn (global):\n      yarn global add prettier\n  \n      # npm (local):\n      npm install --save-dev prettier\n  \n      # npm (global):\n      npm install --global prettier\n  \n  ## Usage\n  \n  There are three available options to format code:\n  \n  1. Command Palette: From the command palette (ctrl/cmd + shift + p), type \"JsPrettier Format Code\".\n  2. Context Menu: Right-click anywhere in the file to bring up the context menu and select \"JsPrettier Format Code\".\n  3. Key Binding: There is no default key binding to run Prettier,\n     see https://github.com/jonlabelle/SublimeJsPrettier#custom-key-binding to add your own.\n  \n  ## Help\n  \n  For additional help including reporting issues, please visit the JsPrettier\n  home page at https://github.com/jonlabelle/SublimeJsPrettier.\n  \n  ## Author\n  \n  Jon LaBelle\n  \n  ## License\n  \n  The MIT License (MIT)\n  \n  Copyright (c) 2017-2019 Jon LaBelle\n",
+			"settings":
+			{
+				"buffer_size": 1991,
+				"line_ending": "Unix",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "{% extends 'funding_theory/base.html' %}\n\n{% block content %}\n<script type=\"text/javascript\">\n\ttinymce.init({\n\t\tselector\t: '#tinymce_textarea',\n\t\tbranding\t: false,\n\t\ttheme\t\t: 'silver',\n\t\tmenubar\t\t: false,\n\t\tstatusbar\t: false, \n\t\theight\t\t: '400',\n\t});\n</script>\n\n<section class=\"section\">\n  <div class=\"container\">\n\n  \t<div class=\"columns\">\n  \t\t<div class=\"column\">\n  \t\t\t<form method=\"post\" id=\"tinymce_form\">\n  \t\t\t\t<textarea id=\"tinymce_textarea\"></textarea>\n  \t\t\t\t<br>\n  \t\t\t\t<button class=\"button is-primary is-rounded\" type=\"submit\">Submit</button>\n  \t\t\t</form>\n  \t\t</div>\n  \t</div>\n\n  </div>    \n</section>\n\n<section class=\"section\">\n\t<div class=\"container\" id=\"for_grid\">\n\t\t<div class=\"columns\">\n\t\t\t<div class=\"column\">      <img src=\"https://bulma.io/images/placeholders/1280x960.png\" alt=\"Placeholder image\">\t</div>\n\t\t\t<div class=\"column\">      <img src=\"https://bulma.io/images/placeholders/1280x960.png\" alt=\"Placeholder image\">\t</div>\n\t\t\t<div class=\"column\">      <img src=\"https://bulma.io/images/placeholders/1280x960.png\" alt=\"Placeholder image\">\t</div>\n\t\t\t<div class=\"column\">      <img src=\"https://bulma.io/images/placeholders/1280x960.png\" alt=\"Placeholder image\">\t</div>\n\t\t\t<!-- <div class=\"column\">      <img src=\"https://bulma.io/images/placeholders/1280x960.png\" alt=\"Placeholder image\">\t</div> -->\n\t\t</div>\n\t</div>\n</section>\n\n<script type=\"text/javascript\">\n\t$(document).ready(function(){\n\n\t\t$('#tinymce_form').submit(function(e){\n\n\t\t\tvar content = tinyMCE.get('tinymce_textarea').getContent();\n\t\t\tvar data = content.split('<p>').join('').split('</p>').join('').split('&nbsp;').join('');\n\t\t\tvar data_json = CSVJSON.csv2json(data,{parseNumbers: true});\n\t\t\tvar uniq_patients =  _.uniq(_.map(data_json,d=>d.pat));\n\t\t\tvar grouped_data = new Array();\n\n\t\t\tgenerate_grid(uniq_patients.length);\n\n\t\t\tfor(i=0;i<uniq_patients.length;i++){\n\t\t\t\tvar index = _.map(data_json, (d,e)=>d.pat==uniq_patients[i]?e:'').filter(String);\n\t\t\t\tgrouped_data[i] = _.map(index,d=>data_json[d]);\n\t\t\t}\n\n\t\t\tconsole.log(grouped_data);\n\t\t\t// $('#data_container').html(JSON.stringify(data_json));\n\t\t\treturn false;\n\t\t});\n\n\t});\n</script>\n\n<script type=\"text/javascript\">\n\tfunction generate_grid(length){\n\t\tvar loop = _.ceil(length/4);\n\t\tfor(i=0;i<loop;i++){\n\t\t\t\n\t\t}\n\t}\n</script>\n{% endblock %}",
+			"file": "apps/funding_theory/template/funding_theory/index.html",
+			"file_size": 2219,
+			"file_write_time": 132223605792935852,
+			"settings":
+			{
+				"buffer_size": 2278,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "apps/funding_theory/views.py",
+			"settings":
+			{
+				"buffer_size": 198,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "all_development/urls.py",
+			"settings":
+			{
+				"buffer_size": 818,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "apps/funding_theory/urls.py",
+			"settings":
+			{
+				"buffer_size": 123,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 136.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/icgc/Development/Django_Dev",
+		"/home/icgc/Development/Django_Dev/all_development",
+		"/home/icgc/Development/Django_Dev/apps",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/static",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/static/funding_theory",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/static/funding_theory/js",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/template",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/template/funding_theory"
+	],
+	"file_history":
+	[
+		"/opt/lampp/htdocs/nibmg-website/cactus_data",
+		"/opt/lampp/htdocs/nibmg-website/color_scheme",
+		"/opt/lampp/htdocs/nibmg-website/js/d3_cactus3.js",
+		"/opt/lampp/htdocs/nibmg-website/js/d3_cactus2.js",
+		"/opt/lampp/htdocs/nibmg-website/js/d3_snv_class.js",
+		"/opt/lampp/htdocs/nibmg-website/js/all_calculations_query_page.js",
+		"/opt/lampp/htdocs/nibmg-website/js/d3_variant_classification.js",
+		"/opt/lampp/htdocs/nibmg-website/php/query.php",
+		"/opt/lampp/htdocs/nibmg-website/js/d3_cactus.js",
+		"/opt/lampp/htdocs/nibmg-website/php/data.csv",
+		"/run/media/icgc/UBUNTU 18_0/lollipop_fixed",
+		"/home/icgc/scrapping.py",
+		"/opt/lampp/htdocs/nibmg-website/js/d3_remove.js",
+		"/opt/lampp/htdocs/nibmg-website/js/d3_test2.js",
+		"/opt/lampp/htdocs/nibmg-website/js/d3_test.js",
+		"/opt/lampp/htdocs/nibmg-website/js/d3_snv_class_stacked_pie.js",
+		"/opt/lampp/htdocs/nibmg-website/js/d3_dynamic_creation.js",
+		"/run/media/icgc/UBUNTU 18_0/text",
+		"/run/media/icgc/UBUNTU 18_0/all_calculations_query_page_modified.js",
+		"/opt/lampp/htdocs/nibmg-website/js/d3_lolipop.js",
+		"/run/media/icgc/OIIINK/format.html",
+		"/opt/lampp/htdocs/nibmg-website/d3/CHANGES.md"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"db_test",
+			"'",
+			"\"",
+			"38",
+			"z1",
+			" ",
+			"remove",
+			"intron",
+			"tab",
+			">\n",
+			"snp"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "/home/icgc/Development/Django_Dev"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "all_development/settings.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3697,
+						"regions":
+						{
+							"col_112233FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2589,
+										2593
+									]
+								],
+								"scope": "col_112233FF"
+							},
+							"col_112233FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_112233FF_circle.png",
+								"regions":
+								[
+									[
+										2561,
+										2561
+									]
+								],
+								"scope": "col_gutter"
+							}
+						},
+						"selection":
+						[
+							[
+								1781,
+								1781
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 816.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "apps/funding_theory/template/funding_theory/base.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2815,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								586,
+								586
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "apps/funding_theory/static/funding_theory/js/d3-append-html.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 229,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								229
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1991,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1264,
+								1264
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"default_dir": "/home/icgc/Development/Django_Dev/apps/funding_theory/static/funding_theory/js",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "apps/funding_theory/template/funding_theory/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2278,
+						"regions":
+						{
+							"col_C0C0C0FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										176,
+										182
+									]
+								],
+								"scope": "col_C0C0C0FF"
+							},
+							"col_C0C0C0FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_C0C0C0FF_circle.png",
+								"regions":
+								[
+									[
+										164,
+										164
+									]
+								],
+								"scope": "col_gutter"
+							}
+						},
+						"selection":
+						[
+							[
+								2246,
+								2246
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 357.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "apps/funding_theory/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 198,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								167,
+								167
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "all_development/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 818,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								811,
+								811
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "apps/funding_theory/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 123,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								116,
+								116
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 41.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 97.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 69.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"/home/icgc/Development/Cancer_Database_Website/django_cancerdb.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 301.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

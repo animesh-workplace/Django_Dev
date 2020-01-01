@@ -1,0 +1,83 @@
+{% extends 'funding_theory/base.html' %}
+
+{% block content %}
+<script type="text/javascript">
+	tinymce.init({
+		selector	: '#tinymce_textarea',
+		branding	: false,
+		theme		: 'silver',
+		menubar		: false,
+		statusbar	: false, 
+		height		: '400',
+	});
+</script>
+
+<section class="section">
+  <div class="container">
+
+  	<div class="columns">
+  		<div class="column">
+  			<form method="post" id="tinymce_form"> {% csrf_token %}
+  				<textarea id="tinymce_textarea"></textarea>
+  				<br>
+  				<button class="button is-primary is-rounded" type="submit">Submit</button>
+  			</form>
+  		</div>
+  	</div>
+
+  </div>    
+</section>
+
+<section class="section">
+	<div class="container" id="for_grid">
+	</div>
+</section>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('#tinymce_form').submit(function(e){
+
+			var content = tinyMCE.get('tinymce_textarea').getContent();
+			var data = content.split('<p>').join('').split('</p>').join('').split('&nbsp;').join('');
+			var data_json = CSVJSON.csv2json(data,{parseNumbers: true});
+			var uniq_patients =  _.uniq(_.map(data_json,d=>d.pat));
+			var grouped_data = new Array();
+
+			generate_grid(uniq_patients.length);
+
+			for(i=0;i<uniq_patients.length;i++){
+				var index = _.map(data_json, (d,e)=>d.pat==uniq_patients[i]?e:'').filter(String);
+				grouped_data[i] = _.map(index,d=>data_json[d]);
+			}
+
+			console.log(grouped_data);
+			// $('#data_container').html(JSON.stringify(data_json));
+			return false;
+		});
+
+	});
+</script>
+
+<script type="text/javascript">
+	function generate_grid(length){
+		var loop = _.ceil(length/4);
+		for(i=0;i<loop;i++){
+			d3.select('#for_grid').appendHTML(`
+				<div class="columns">
+					<div class="column"> <div id="patient_${i*4+1}">patient_${i*4+1}</div> </div>
+					<div class="column"> <div id="patient_${i*4+2}">patient_${i*4+2}</div> </div>
+					<div class="column"> <div id="patient_${i*4+3}">patient_${i*4+3}</div> </div>
+					<div class="column"> <div id="patient_${i*4+4}">patient_${i*4+4}</div> </div>
+				</div>
+				`);
+		}
+
+		for(i=1;i<=(4*loop);i++){
+			if(i>length){
+				$(`#patient_${i}`).hide();
+			}
+		}
+	}
+</script>
+{% endblock %}
