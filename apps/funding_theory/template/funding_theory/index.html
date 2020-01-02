@@ -20,7 +20,7 @@
   			<form method="post" id="tinymce_form"> {% csrf_token %}
   				<textarea id="tinymce_textarea"></textarea>
   				<br>
-  				<button class="button is-primary is-rounded" type="submit">Submit</button>
+  				<button class="button is-primary is-rounded is-fullwidth" type="submit">Submit</button>
   			</form>
   		</div>
   	</div>
@@ -42,6 +42,7 @@
 			var data = content.split('<p>').join('').split('</p>').join('').split('&nbsp;').join('');
 			var data_json = CSVJSON.csv2json(data,{parseNumbers: true});
 			var uniq_patients =  _.uniq(_.map(data_json,d=>d.pat));
+			var uniq_genes = _.uniq(_.map(data_json,d=>d.gene));
 			var grouped_data = new Array();
 
 			generate_grid(uniq_patients.length);
@@ -51,8 +52,11 @@
 				grouped_data[i] = _.map(index,d=>data_json[d]);
 			}
 
-			console.log(grouped_data);
+			console.log(uniq_genes, grouped_data);
 			// $('#data_container').html(JSON.stringify(data_json));
+			for(i=0;i<uniq_patients.length;i++){
+				generate_plot(i+1,grouped_data[i]);
+			}
 			return false;
 		});
 
@@ -65,10 +69,10 @@
 		for(i=0;i<loop;i++){
 			d3.select('#for_grid').appendHTML(`
 				<div class="columns">
-					<div class="column"> <div id="patient_${i*4+1}">patient_${i*4+1}</div> </div>
-					<div class="column"> <div id="patient_${i*4+2}">patient_${i*4+2}</div> </div>
-					<div class="column"> <div id="patient_${i*4+3}">patient_${i*4+3}</div> </div>
-					<div class="column"> <div id="patient_${i*4+4}">patient_${i*4+4}</div> </div>
+					<div class="column"> <div id="patient_${i*4+1}"></div> </div>
+					<div class="column"> <div id="patient_${i*4+2}"></div> </div>
+					<div class="column"> <div id="patient_${i*4+3}"></div> </div>
+					<div class="column"> <div id="patient_${i*4+4}"></div> </div>
 				</div>
 				`);
 		}
@@ -78,6 +82,25 @@
 				$(`#patient_${i}`).hide();
 			}
 		}
+	}
+</script>
+
+<script type="text/javascript">
+	function generate_plot(index, data) {
+		var Margin = {top: 40, right: 20, bottom: 40, left: 110};
+		var InnerWidth = 432 - Margin.left - Margin.right;
+		var InnerHeight = 432 - Margin.top - Margin.bottom;
+
+		var svg4 = d3.select(`#patient_${index}`).append("svg")
+		             .attr("preserveAspectRatio", "xMinYMin meet")
+		             .attr("viewBox", `0 0 ${InnerWidth + Margin.left + Margin.right} ${InnerHeight + Margin.top + Margin.bottom}`)
+		             // .style("background","rgba(211,211,211,0.5)")
+		             // .style("backdrop-filter","blur(10px)")
+		             .style("box-shadow","-12px -12px 12px 0 rgba(0,0,0,0.03), 12px 12px 12px 0 rgba(0,0,0,0.03)")
+		             // .style("background-blend-mode","exclusion")
+		             .style("border-radius","5px")
+		             .append("g")
+		             .attr("transform", "translate(" + Margin.left + "," + Margin.top + ")");
 	}
 </script>
 {% endblock %}
