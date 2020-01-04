@@ -1,0 +1,19 @@
+{% extends 'funding_theory/base.html' %}
+
+{% block content %}
+
+{% load static %}
+
+<script type="text/javascript" src="{% static 'funding_theory/js/d3_cactus7.js' %}"></script>
+
+
+<section class="section">
+	<div class="container">
+		<div class="columns">
+			<div class="column"><div id="graph_1"></div></div>
+			<div class="column"><div id="graph_2"></div></div>
+			<div class="column"><div id="graph_3"></div></div>
+		</div>
+	</div>
+</section>
+{% endblock %}
