@@ -117,7 +117,7 @@ var y_axis_uniq = d3.scaleLinear()
                     .domain([0, 6])
                     .rangeRound([0,InnerHeight]);
 
-var svg = d3.select(`#graph_2`).append("svg")
+var svg = d3.select("#graph_2").append("svg")
             .attr("preserveAspectRatio", "xMinYMin meet")
             .attr("viewBox", `0 0 ${InnerWidth + Margin.left + Margin.right} ${InnerHeight + Margin.top + Margin.bottom}`)
             .style("background","lightblue")
@@ -186,13 +186,13 @@ var uniq_lk_plot = group2.selectAll("g").data(uniq_lk_d3_stack)
                          // Replace the patient name with actual patient name
                          .attr("id", function(d,i) {return `patient_${all_genes[_.intersection(_.map(_.map(uniq_lk_d3_stack,a=>a[i][1]),(a,b)=>a===d[1]?b:''),_.map(_.map(uniq_lk_d3_stack,a=>a[i][0]),(a,b)=>a===d[0]?b:'')).filter(String)]}_${i}`});
 
-// $('.patient_name_uniq_lk').css({
-//   'transform-origin':'bottom center',
-//   'transform-box':'fill-box',
-//   'transform':'rotate(20deg)'
-//   // 'transform':'translate(0px, -150px)',
-//   // 'animation':'rotateBox 3s linear infinite',
-// });
+$('.patient_name_uniq_lk').css({
+  'transform-origin':'bottom center',
+  'transform-box':'fill-box',
+  // 'transform':'rotate(30deg)'
+  // 'transform':'translate(0px, -150px)',
+  'animation':'rotateBox 3s linear infinite',
+});
 
 // $('.patient_name_uniq_lk').css({
 //   'transform-box': 'fill-box',
@@ -237,13 +237,13 @@ var uniq_tumor_plot = group3.selectAll("g").data(uniq_tumor_d3_stack)
 //   // 'transform' : 'rotate(30deg) translate(80px,-120px)',  
 // });
 
-// $('#random_name').css({
-//   'transform-origin':'bottom center',
-//   'transform-box':'fill-box',
-//   // 'transform':'rotate(30deg)'
-//   // 'transform':'translate(0px, -150px)',
-//   // 'animation':'rotateBox 2s linear infinite',
-// });
+$('#random_name').css({
+  'transform-origin':'bottom center',
+  'transform-box':'fill-box',
+  // 'transform':'rotate(30deg)'
+  // 'transform':'translate(0px, -150px)',
+  'animation':'rotateBox 2s linear infinite',
+});
 
 svg.append("g").attr('transform', `translate(0, ${InnerHeight})`)
                 .style("font", "15px sans").call(d3.axisBottom(x_uniq)

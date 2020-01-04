@@ -283,28 +283,10 @@
 			}
 		},
 		{
-			"file": "apps/funding_theory/static/funding_theory/js/d3_cactus3.js",
-			"settings":
-			{
-				"buffer_size": 6067,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "apps/funding_theory/views.py",
 			"settings":
 			{
-				"buffer_size": 198,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "all_development/urls.py",
-			"settings":
-			{
-				"buffer_size": 818,
+				"buffer_size": 296,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -313,9 +295,38 @@
 			"file": "apps/funding_theory/urls.py",
 			"settings":
 			{
-				"buffer_size": 123,
+				"buffer_size": 176,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "apps/funding_theory/template/funding_theory/test.html",
+			"settings":
+			{
+				"buffer_size": 459,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "apps/funding_theory/static/funding_theory/js/d3_cactus7.js",
+			"settings":
+			{
+				"buffer_size": 10507,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": ".navbar-item img{\n\tmax-height: 2.5rem;\t\n}\n\n",
+			"file": "apps/funding_theory/static/funding_theory/css/styles.css",
+			"file_size": 45,
+			"file_write_time": 132224014460000000,
+			"settings":
+			{
+				"buffer_size": 43,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -365,12 +376,14 @@
 		"/home/icgc/Development/Django_Dev/apps/funding_theory",
 		"/home/icgc/Development/Django_Dev/apps/funding_theory/static",
 		"/home/icgc/Development/Django_Dev/apps/funding_theory/static/funding_theory",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/static/funding_theory/css",
 		"/home/icgc/Development/Django_Dev/apps/funding_theory/static/funding_theory/js",
 		"/home/icgc/Development/Django_Dev/apps/funding_theory/template",
 		"/home/icgc/Development/Django_Dev/apps/funding_theory/template/funding_theory"
 	],
 	"file_history":
 	[
+		"/home/icgc/Development/Django_Dev/all_development/urls.py",
 		"/home/icgc/Development/Django_Dev/apps/funding_theory/static/funding_theory/js/d3-append-html.js",
 		"/opt/lampp/htdocs/nibmg-website/cactus_data",
 		"/opt/lampp/htdocs/nibmg-website/color_scheme",
@@ -397,7 +410,7 @@
 	],
 	"find":
 	{
-		"height": 41.0
+		"height": 30.0
 	},
 	"find_in_files":
 	{
@@ -445,7 +458,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 7,
 			"sheets":
 			[
 				{
@@ -475,7 +488,7 @@
 						"translation.y": 816.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -491,8 +504,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								1053,
+								1053
 							]
 						],
 						"settings":
@@ -503,10 +516,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 816.0,
+						"translation.y": 102.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -605,8 +618,8 @@
 						"selection":
 						[
 							[
-								6529,
-								2808
+								4200,
+								4200
 							]
 						],
 						"settings":
@@ -616,119 +629,60 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 798.0,
+						"translation.y": 1302.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "apps/funding_theory/static/funding_theory/js/d3_cactus3.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 6067,
-						"regions":
-						{
-							"col_000000FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										3643,
-										3648
-									],
-									[
-										4930,
-										4935
-									]
-								],
-								"scope": "col_000000FF"
-							},
-							"col_000000FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_000000FF_circle.png",
-								"regions":
-								[
-									[
-										3606,
-										3606
-									],
-									[
-										4893,
-										4893
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_ADD8E6FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										2815,
-										2824
-									]
-								],
-								"scope": "col_ADD8E6FF"
-							},
-							"col_ADD8E6FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_ADD8E6FF_circle.png",
-								"regions":
-								[
-									[
-										2781,
-										2781
-									]
-								],
-								"scope": "col_gutter"
-							}
-						},
-						"selection":
-						[
-							[
-								2966,
-								2966
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1938.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
 					"file": "apps/funding_theory/views.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 198,
+						"buffer_size": 296,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								167,
-								167
+								285,
+								285
 							]
 						],
 						"settings":
 						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "apps/funding_theory/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 176,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								148,
+								148
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
 							"syntax": "Packages/Python/Python.sublime-syntax"
 						},
 						"translation.x": 0.0,
@@ -740,59 +694,673 @@
 				},
 				{
 					"buffer": 5,
-					"file": "all_development/urls.py",
+					"file": "apps/funding_theory/template/funding_theory/test.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 818,
+						"buffer_size": 459,
 						"regions":
 						{
+							"col_00000001":
+							{
+								"flags": 16,
+								"regions":
+								[
+								],
+								"scope": "col_00000001"
+							},
+							"col_00000001_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_00000001_circle.png",
+								"regions":
+								[
+								],
+								"scope": "col_gutter"
+							},
+							"col_ADD8E6FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+								],
+								"scope": "col_ADD8E6FF"
+							},
+							"col_ADD8E6FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_ADD8E6FF_circle.png",
+								"regions":
+								[
+								],
+								"scope": "col_gutter"
+							},
+							"col_C0C0C0FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+								],
+								"scope": "col_C0C0C0FF"
+							},
+							"col_C0C0C0FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_C0C0C0FF_circle.png",
+								"regions":
+								[
+								],
+								"scope": "col_gutter"
+							}
 						},
 						"selection":
 						[
 							[
-								811,
-								811
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "apps/funding_theory/urls.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 123,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								116,
-								116
+								444,
+								444
 							]
 						],
 						"settings":
 						{
 							"open_with_edit": true,
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "apps/funding_theory/static/funding_theory/js/d3_cactus7.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10507,
+						"regions":
+						{
+							"col_00000001":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										10045,
+										10058
+									],
+									[
+										10122,
+										10135
+									]
+								],
+								"scope": "col_00000001"
+							},
+							"col_00000001_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_00000001_circle.png",
+								"regions":
+								[
+									[
+										10000,
+										10000
+									],
+									[
+										10062,
+										10062
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_00758FFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1118,
+										1125
+									]
+								],
+								"scope": "col_00758FFF"
+							},
+							"col_00758FFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_00758FFF_circle.png",
+								"regions":
+								[
+									[
+										1022,
+										1022
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_008000FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										5493,
+										5498
+									]
+								],
+								"scope": "col_008000FF"
+							},
+							"col_008000FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_008000FF_circle.png",
+								"regions":
+								[
+									[
+										5462,
+										5462
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_0F4C81FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1063,
+										1070
+									]
+								],
+								"scope": "col_0F4C81FF"
+							},
+							"col_0F4C81FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_0F4C81FF_circle.png",
+								"regions":
+								[
+									[
+										1022,
+										1022
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_282D3CFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1184,
+										1191
+									]
+								],
+								"scope": "col_282D3CFF"
+							},
+							"col_282D3CFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_282D3CFF_circle.png",
+								"regions":
+								[
+									[
+										1022,
+										1022
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_4A5335FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1085,
+										1092
+									]
+								],
+								"scope": "col_4A5335FF"
+							},
+							"col_4A5335FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_4A5335FF_circle.png",
+								"regions":
+								[
+									[
+										1022,
+										1022
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_55C6A9FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1074,
+										1081
+									]
+								],
+								"scope": "col_55C6A9FF"
+							},
+							"col_55C6A9FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_55C6A9FF_circle.png",
+								"regions":
+								[
+									[
+										1022,
+										1022
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_6B5876FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1162,
+										1169
+									]
+								],
+								"scope": "col_6B5876FF"
+							},
+							"col_6B5876FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_6B5876FF_circle.png",
+								"regions":
+								[
+									[
+										1022,
+										1022
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_798EA4FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1096,
+										1103
+									]
+								],
+								"scope": "col_798EA4FF"
+							},
+							"col_798EA4FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_798EA4FF_circle.png",
+								"regions":
+								[
+									[
+										1022,
+										1022
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_9B4722FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1151,
+										1158
+									]
+								],
+								"scope": "col_9B4722FF"
+							},
+							"col_9B4722FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_9B4722FF_circle.png",
+								"regions":
+								[
+									[
+										1022,
+										1022
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_A09998FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1206,
+										1213
+									]
+								],
+								"scope": "col_A09998FF"
+							},
+							"col_A09998FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_A09998FF_circle.png",
+								"regions":
+								[
+									[
+										1022,
+										1022
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_ADD8E6FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										3663,
+										3672
+									]
+								],
+								"scope": "col_ADD8E6FF"
+							},
+							"col_ADD8E6FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_ADD8E6FF_circle.png",
+								"regions":
+								[
+									[
+										3630,
+										3630
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_B89B72FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1173,
+										1180
+									]
+								],
+								"scope": "col_B89B72FF"
+							},
+							"col_B89B72FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_B89B72FF_circle.png",
+								"regions":
+								[
+									[
+										1022,
+										1022
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_CD212AFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1041,
+										1048
+									]
+								],
+								"scope": "col_CD212AFF"
+							},
+							"col_CD212AFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_CD212AFF_circle.png",
+								"regions":
+								[
+									[
+										1022,
+										1022
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_E8A798FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1140,
+										1147
+									]
+								],
+								"scope": "col_E8A798FF"
+							},
+							"col_E8A798FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_E8A798FF_circle.png",
+								"regions":
+								[
+									[
+										1022,
+										1022
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_EDD59EFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1129,
+										1136
+									]
+								],
+								"scope": "col_EDD59EFF"
+							},
+							"col_EDD59EFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_EDD59EFF_circle.png",
+								"regions":
+								[
+									[
+										1022,
+										1022
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_EDF1FEFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1195,
+										1202
+									]
+								],
+								"scope": "col_EDF1FEFF"
+							},
+							"col_EDF1FEFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_EDF1FEFF_circle.png",
+								"regions":
+								[
+									[
+										1022,
+										1022
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FA7A35FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1107,
+										1114
+									]
+								],
+								"scope": "col_FA7A35FF"
+							},
+							"col_FA7A35FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FA7A35FF_circle.png",
+								"regions":
+								[
+									[
+										1022,
+										1022
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FF0000FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										5760,
+										5763
+									]
+								],
+								"scope": "col_FF0000FF"
+							},
+							"col_FF0000FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FF0000FF_circle.png",
+								"regions":
+								[
+									[
+										5729,
+										5729
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FFA500FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1052,
+										1059
+									]
+								],
+								"scope": "col_FFA500FF"
+							},
+							"col_FFA500FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FFA500FF_circle.png",
+								"regions":
+								[
+									[
+										1022,
+										1022
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FFFF00FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										7665,
+										7671
+									]
+								],
+								"scope": "col_FFFF00FF"
+							},
+							"col_FFFF00FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FFFF00FF_circle.png",
+								"regions":
+								[
+									[
+										7634,
+										7634
+									]
+								],
+								"scope": "col_gutter"
+							}
+						},
+						"selection":
+						[
+							[
+								7264,
+								7264
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3532.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "apps/funding_theory/static/funding_theory/css/styles.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 43,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								43,
+								43
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -800,11 +1368,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 30.0
 	},
 	"input":
 	{
-		"height": 41.0
+		"height": 43.0
 	},
 	"layout":
 	{
@@ -841,7 +1409,7 @@
 	"project": "",
 	"replace":
 	{
-		"height": 52.0
+		"height": 56.0
 	},
 	"save_all_on_build": true,
 	"select_file":
