@@ -313,19 +313,17 @@
 			"file": "apps/funding_theory/static/funding_theory/js/d3_cactus7.js",
 			"settings":
 			{
-				"buffer_size": 10507,
+				"buffer_size": 10483,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": ".navbar-item img{\n\tmax-height: 2.5rem;\t\n}\n\n",
 			"file": "apps/funding_theory/static/funding_theory/css/styles.css",
-			"file_size": 45,
-			"file_write_time": 132224014460000000,
 			"settings":
 			{
-				"buffer_size": 43,
+				"buffer_size": 110,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -458,7 +456,7 @@
 	"groups":
 	[
 		{
-			"selected": 7,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -778,7 +776,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10507,
+						"buffer_size": 10483,
 						"regions":
 						{
 							"col_00000001":
@@ -787,12 +785,12 @@
 								"regions":
 								[
 									[
-										10045,
-										10058
+										10021,
+										10034
 									],
 									[
-										10122,
-										10135
+										10098,
+										10111
 									]
 								],
 								"scope": "col_00000001"
@@ -804,12 +802,12 @@
 								"regions":
 								[
 									[
-										10000,
-										10000
+										9976,
+										9976
 									],
 									[
-										10062,
-										10062
+										10038,
+										10038
 									]
 								],
 								"scope": "col_gutter"
@@ -1318,8 +1316,8 @@
 						"selection":
 						[
 							[
-								7264,
-								7264
+								9244,
+								9244
 							]
 						],
 						"settings":
@@ -1329,10 +1327,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3532.0,
+						"translation.y": 4351.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1341,15 +1339,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 43,
+						"buffer_size": 110,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								43,
-								43
+								110,
+								110
 							]
 						],
 						"settings":
@@ -1360,7 +1358,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
