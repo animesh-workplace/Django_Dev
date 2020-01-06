@@ -62,8 +62,8 @@ var uniq_lk_data = cactus_data.filter(d=>d.level=='uniq' && d.type=='LK');
 var all_genes = ['ARID2','CASP8','CDKN2A','EPHA2','FAT1','FBXW7','HLA-B','HRAS','KMT2B','NOTCH1','PIK3CA','TGFBR2','TP53'];
 var max = _.sum(_.map(cactus_data,d=>d.VAF));
 
-var skew_shift_lk = 50*Math.tan((12*Math.PI)/180);
-var skew_shift_tumor = 80*Math.tan((12*Math.PI)/180);
+var skew_shift_lk = 50*Math.tan((40*Math.PI)/180);
+var skew_shift_tumor = 80*Math.tan((40*Math.PI)/180);
 var uniq_key = _.sortBy(_.uniq(_.map(cactus_data,d=>d.type)));
 var common_data_stack = new Array();
 var uniq_tumor_stack = new Array();
@@ -176,7 +176,7 @@ var uniq_lk_plot = group2.selectAll("g").data(uniq_lk_d3_stack)
              uniq_lk_plot.selectAll("rect").data(function(d){return d;})
                          .enter().append("rect")
                          .attr("height",function(d){return y_uniq(d[0]) - y_uniq(d[1]);})
-                         .attr("x", function(d,i){return x_uniq(uniq_key[0]) + (y_axis_uniq(1)/2) - skew_shift_lk;})
+                         .attr("x", function(d,i){return x_uniq(uniq_key[0]) + (y_axis_uniq(1)/2);})
                          .attr("y", function(d){return y_uniq(d[1]) - common_plot_height - 45 - 50;})
                          .attr("width", y_axis_uniq(1))
                          // Replace the patient name with actual patient name
@@ -203,7 +203,7 @@ var uniq_tumor_plot = group3.selectAll("g").data(uniq_tumor_d3_stack)
              uniq_tumor_plot.selectAll("rect").data(function(d){return d;})
                             .enter().append("rect")
                             .attr("height",function(d){return y_uniq(d[0]) - y_uniq(d[1]);})
-                            .attr("x", function(d,i){return x_uniq(uniq_key[1]) - (y_axis_uniq(1)/2) + skew_shift_tumor;})
+                            .attr("x", function(d,i){return x_uniq(uniq_key[1]) - (y_axis_uniq(1)/2);})
                             .attr("y", function(d){return y_uniq(d[1]) - common_plot_height - 45 - 80;})
                             .attr("width", y_axis_uniq(1))
                          // Replace the patient name with actual patient name
@@ -219,11 +219,11 @@ svg.selectAll(".tick  line").attr("stroke", "rgba(0,0,0,0)");
 // tilt(_.toLower(uniq_key[0]),cactus_meta['Angular Distance']/2);
 // tilt(_.toLower(uniq_key[1]),-cactus_meta['Angular Distance']/2);
 
-$('.lk_plot').css({
-  'transform-origin':'bottom center',
-  'transform-box':'fill-box',
-  // 'transform':'skewX(100deg) translate(-88px,0px)'
-});
+// $('.lk_plot').css({
+//   'transform-origin':'bottom center',
+//   'transform-box':'fill-box',
+//   // 'transform':'skewX(100deg) translate(-88px,0px)'
+// });
 
 $('.tumor_plot').css({
   'transform-origin':'bottom center',
@@ -231,17 +231,31 @@ $('.tumor_plot').css({
   // 'transform':'skewX(-30deg) translate(88px,0px)'
 });
 
-tilt(_.toLower(uniq_key[0]),12);
-tilt(_.toLower(uniq_key[1]),-12);
+tilt(_.toLower(uniq_key[0]),-40);
+tilt(_.toLower(uniq_key[1]),40);
 function tilt(type, degree){
   $(`#patient_${type}`).css({
     'transform-origin':`${x_uniq(uniq_key[1])}px 200px`,
-    'transform': `skewX(${degree}deg)`
+    'transform': `rotate(${degree}deg)`
   });
 };
 
+function tilt_lk(degree){
+  $(`.lk_plot`).css({
+    'transform-origin':`${x_uniq(uniq_key[1])}px 200px`,
+    'transform': `rotate(${degree}deg)`
+  });
+};
 
+function tilt_tumor(degree){
+  $(`.tumor_plot`).css({
+    'transform-origin':`${x_uniq(uniq_key[1])}px 200px`,
+    'transform': `rotate(${degree}deg)`
+  });
+};
 
+tilt_lk(-40);
+tilt_tumor(40);
 function getTransformation(transform) {
   // Create a dummy g for calculation purposes only. This will never
   // be appended to the DOM and will be discarded once this function 
