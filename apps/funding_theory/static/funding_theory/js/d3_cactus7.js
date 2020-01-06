@@ -62,6 +62,8 @@ var uniq_lk_data = cactus_data.filter(d=>d.level=='uniq' && d.type=='LK');
 var all_genes = ['ARID2','CASP8','CDKN2A','EPHA2','FAT1','FBXW7','HLA-B','HRAS','KMT2B','NOTCH1','PIK3CA','TGFBR2','TP53'];
 var max = _.sum(_.map(cactus_data,d=>d.VAF));
 
+var skew_shift_lk = 50*Math.tan((12*Math.PI)/180);
+var skew_shift_tumor = 80*Math.tan((12*Math.PI)/180);
 var uniq_key = _.sortBy(_.uniq(_.map(cactus_data,d=>d.type)));
 var common_data_stack = new Array();
 var uniq_tumor_stack = new Array();
@@ -128,8 +130,6 @@ var group1 = svg.append("g");
 
 var common_plot = group1.selectAll("g").data(common_d3_stack)
                         .enter().append("g")
-                        // .attr('transform-origin','center center')
-                        // .attr('class',(d,i)=>`patient_name_common`)
                         .style("fill", (d,i)=>color_set[i]);
 
          common_plot.selectAll("rect").data(function(d){return d;})
@@ -147,8 +147,6 @@ for(i=0;i<all_genes.length;i++){
 }
 
 var common_plot_height = _.ceil(_.max([_.sum(common_plot_length_lk),_.sum(common_plot_length_tumor)]));
-
-// $('.patient_name_common').css('transform', `scaleX(-1) rotate(90deg) translate(${InnerWidth-common_plot_height}px, 0px)`);
 
 var line1 = svg.append('line')
                .attr('x1',x_uniq(uniq_key[1]))
@@ -168,36 +166,21 @@ var line2 = svg.append('line')
 // Replace the patient name with actual patient name
                .attr('id','patient_lk');
 
-var group2 = svg.append("g");
+var group2 = svg.append("g")
+                .attr("class",'lk_plot');
 
 var uniq_lk_plot = group2.selectAll("g").data(uniq_lk_d3_stack)
                          .enter().append("g")
-                         .attr('class',(d,i)=>`patient_name_uniq_lk`)
                          .style("fill", (d,i)=>color_set[i]);
 
              uniq_lk_plot.selectAll("rect").data(function(d){return d;})
                          .enter().append("rect")
                          .attr("height",function(d){return y_uniq(d[0]) - y_uniq(d[1]);})
-                         .attr("x", function(d,i){return x_uniq(uniq_key[0]);})
-                         .attr("y", function(d){return y_uniq(d[1])-common_plot_height-45-50;})
+                         .attr("x", function(d,i){return x_uniq(uniq_key[0]) + (y_axis_uniq(1)/2) - skew_shift_lk;})
+                         .attr("y", function(d){return y_uniq(d[1]) - common_plot_height - 45 - 50;})
                          .attr("width", y_axis_uniq(1))
-                         // .attr('transform-origin','bottom center')
-                         // .attr("transform-box", "fill-box")
                          // Replace the patient name with actual patient name
                          .attr("id", function(d,i) {return `patient_${all_genes[_.intersection(_.map(_.map(uniq_lk_d3_stack,a=>a[i][1]),(a,b)=>a===d[1]?b:''),_.map(_.map(uniq_lk_d3_stack,a=>a[i][0]),(a,b)=>a===d[0]?b:'')).filter(String)]}_${i}`});
-
-$('.patient_name_uniq_lk').css({
-  'transform-origin':'bottom center',
-  'transform-box':'fill-box',
-  // 'transform':'rotate(30deg)'
-  // 'transform':'translate(0px, -150px)',
-  'animation':'rotateBox 3s linear infinite',
-});
-
-// $('.patient_name_uniq_lk').css({
-//   'transform-box': 'fill-box',
-//   'transform' : 'rotate(-30deg) translate(-88px,-150px)',  
-// });
 
 var line3 = svg.append('line')
                .attr('x1',x_uniq(uniq_key[1]))
@@ -210,10 +193,7 @@ var line3 = svg.append('line')
                .attr('id','patient_tumor');
 
 var group3 = svg.append("g")
-                .attr("id",'random_name')
-                .style('transform-origin','bottom center')
-                .style('transform-box','fill-box');
-                // .style('transform','rotate(10deg)');
+                .attr("class",'tumor_plot');
 
 var uniq_tumor_plot = group3.selectAll("g").data(uniq_tumor_d3_stack)
                             .enter().append("g")
@@ -223,43 +203,74 @@ var uniq_tumor_plot = group3.selectAll("g").data(uniq_tumor_d3_stack)
              uniq_tumor_plot.selectAll("rect").data(function(d){return d;})
                             .enter().append("rect")
                             .attr("height",function(d){return y_uniq(d[0]) - y_uniq(d[1]);})
-                            .attr("x", function(d,i){return x_uniq(uniq_key[1])+24;})
-                            .attr("y", function(d){return y_uniq(d[1])-common_plot_height-45-80;})
+                            .attr("x", function(d,i){return x_uniq(uniq_key[1]) - (y_axis_uniq(1)/2) + skew_shift_tumor;})
+                            .attr("y", function(d){return y_uniq(d[1]) - common_plot_height - 45 - 80;})
                             .attr("width", y_axis_uniq(1))
-                         // .attr('transform-origin','bottom center')
-                         // .attr("transform-box", "fill-box")
                          // Replace the patient name with actual patient name
                             .attr("id", function(d,i) {return `patient_${all_genes[_.intersection(_.map(_.map(uniq_tumor_d3_stack,a=>a[i][1]),(a,b)=>a===d[1]?b:''),_.map(_.map(uniq_tumor_d3_stack,a=>a[i][0]),(a,b)=>a===d[0]?b:'')).filter(String)]}_${i}`});
-
-// $('.patient_name_uniq_tumor').css({
-//   'transform-box': 'fill-box',
-//   'transform' : 'rotate(30deg) translate(44px,-320px)',  
-//   // 'transform' : 'rotate(30deg) translate(80px,-120px)',  
-// });
-
-$('#random_name').css({
-  'transform-origin':'bottom center',
-  'transform-box':'fill-box',
-  // 'transform':'rotate(30deg)'
-  // 'transform':'translate(0px, -150px)',
-  'animation':'rotateBox 2s linear infinite',
-});
 
 svg.append("g").attr('transform', `translate(0, ${InnerHeight})`)
                 .style("font", "15px sans").call(d3.axisBottom(x_uniq)
                                                    .tickFormat(function(d,i){if(i==2||i==3){ return _.toUpper(d); }})
                                                 );
 svg.selectAll(".tick  line").attr("stroke", "rgba(0,0,0,0)");
-// svg.selectAll(".tick:last-of-type line").attr("stroke", "rgba(0,0,0,0)");
+
 
 // tilt(_.toLower(uniq_key[0]),cactus_meta['Angular Distance']/2);
 // tilt(_.toLower(uniq_key[1]),-cactus_meta['Angular Distance']/2);
 
-tilt(_.toLower(uniq_key[0]),30);
-tilt(_.toLower(uniq_key[1]),-30);
+$('.lk_plot').css({
+  'transform-origin':'bottom center',
+  'transform-box':'fill-box',
+  // 'transform':'skewX(100deg) translate(-88px,0px)'
+});
+
+$('.tumor_plot').css({
+  'transform-origin':'bottom center',
+  'transform-box':'fill-box',
+  // 'transform':'skewX(-30deg) translate(88px,0px)'
+});
+
+tilt(_.toLower(uniq_key[0]),12);
+tilt(_.toLower(uniq_key[1]),-12);
 function tilt(type, degree){
   $(`#patient_${type}`).css({
     'transform-origin':`${x_uniq(uniq_key[1])}px 200px`,
     'transform': `skewX(${degree}deg)`
   });
 };
+
+
+
+function getTransformation(transform) {
+  // Create a dummy g for calculation purposes only. This will never
+  // be appended to the DOM and will be discarded once this function 
+  // returns.
+  var g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+  
+  // Set the transform attribute to the provided string value.
+  g.setAttributeNS(null, "transform", transform);
+  
+  // consolidate the SVGTransformList containing all transformations
+  // to a single SVGTransform of type SVG_TRANSFORM_MATRIX and get
+  // its SVGMatrix. 
+  var matrix = g.transform.baseVal.consolidate().matrix;
+  
+  // Below calculations are taken and adapted from the private function
+  // transform/decompose.js of D3's module d3-interpolate.
+  var {a, b, c, d, e, f} = matrix;   // ES6, if this doesn't work, use below assignment
+  // var a=matrix.a, b=matrix.b, c=matrix.c, d=matrix.d, e=matrix.e, f=matrix.f; // ES5
+  var scaleX, scaleY, skewX;
+  if (scaleX = Math.sqrt(a * a + b * b)) a /= scaleX, b /= scaleX;
+  if (skewX = a * c + b * d) c -= a * skewX, d -= b * skewX;
+  if (scaleY = Math.sqrt(c * c + d * d)) c /= scaleY, d /= scaleY, skewX /= scaleY;
+  if (a * d < b * c) a = -a, b = -b, skewX = -skewX, scaleX = -scaleX;
+  return {
+    translateX: e,
+    translateY: f,
+    rotate: Math.atan2(b, a) * 180 / Math.PI,
+    skewX: Math.atan(skewX) * 180 / Math.PI,
+    scaleX: scaleX,
+    scaleY: scaleY
+  };
+}
