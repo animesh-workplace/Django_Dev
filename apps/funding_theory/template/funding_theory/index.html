@@ -3,7 +3,7 @@
 {% block content %}
 <script type="text/javascript">
 	tinymce.init({
-		selector	: '#tinymce_textarea',
+		selector	: '.tinymce_textarea',
 		branding	: false,
 		theme		: 'silver',
 		menubar		: false,
@@ -15,15 +15,14 @@
 <section class="section">
   <div class="container">
 
-  	<div class="columns">
-  		<div class="column">
-  			<form method="post" id="tinymce_form"> {% csrf_token %}
-  				<textarea id="tinymce_textarea"></textarea>
+  		<form method="post" id="tinymce_form"> {% csrf_token %}
+  			<div class="columns">
+  				<div class="column"> <textarea class="tinymce_textarea" id="text_1"></textarea> </div>
+  				<div class="column"> <textarea class="tinymce_textarea" id="text_2"></textarea> </div>
+  			</div>
   				<br>
   				<button class="button is-primary is-rounded is-fullwidth" type="submit">Submit</button>
-  			</form>
-  		</div>
-  	</div>
+  		</form>
 
   </div>    
 </section>
@@ -38,30 +37,32 @@
 
 		$('#tinymce_form').submit(function(e){
 
-			var content = tinyMCE.get('tinymce_textarea').getContent();
-			var data = content.split('<p>').join('').split('</p>').join('').split('&nbsp;').join('');
-			var data_json = CSVJSON.csv2json(data,{parseNumbers: true});
-			var uniq_patients =  _.uniq(_.map(data_json,d=>d.pat));
-			var uniq_genes = _.uniq(_.map(data_json,d=>d.gene));
-			var grouped_data = new Array();
-			var max_value = new Array();
-			var max = 0;
+			var content1 = tinyMCE.get('text_1').getContent();
+			var content2 = tinyMCE.get('text_2').getContent();
+			console.log(content1, content2);
+			// var data = content.split('<p>').join('').split('</p>').join('').split('&nbsp;').join('');
+			// var data_json = CSVJSON.csv2json(data,{parseNumbers: true});
+			// var uniq_patients =  _.uniq(_.map(data_json,d=>d.pat));
+			// var uniq_genes = _.uniq(_.map(data_json,d=>d.gene));
+			// var grouped_data = new Array();
+			// var max_value = new Array();
+			// var max = 0;
 
-			generate_grid(uniq_patients.length, uniq_patients);
+			// generate_grid(uniq_patients.length, uniq_patients);
 
-			for(i=0;i<uniq_patients.length;i++){
-				var index = _.map(data_json, (d,e)=>d.pat==uniq_patients[i]?e:'').filter(String);
-				grouped_data[i] = _.map(index,d=>data_json[d]);
-				max_value[i] = _.sum(_.map(grouped_data[i],d=>d.VAF));
+			// for(i=0;i<uniq_patients.length;i++){
+			// 	var index = _.map(data_json, (d,e)=>d.pat==uniq_patients[i]?e:'').filter(String);
+			// 	grouped_data[i] = _.map(index,d=>data_json[d]);
+			// 	max_value[i] = _.sum(_.map(grouped_data[i],d=>d.VAF));
 
-			}
-			max = _.max(max_value);
-			console.log(max_value);
+			// }
+			// max = _.max(max_value);
+			// console.log(max_value);
 
 			// $('#data_container').html(JSON.stringify(data_json));
-			for(aa=0;aa<uniq_patients.length;aa++){
-				generate_plot(aa+1,grouped_data[aa],max);
-			}
+			// for(aa=0;aa<uniq_patients.length;aa++){
+			// 	generate_plot(aa+1,grouped_data[aa],max);
+			// }
 			return false;
 		});
 
