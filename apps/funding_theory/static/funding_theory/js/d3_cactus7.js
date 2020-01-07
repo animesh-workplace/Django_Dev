@@ -52,7 +52,7 @@ var cactus_meta = {
     "T_only": 9,
     "LK_only": 8,
     "Angular Distance": 11
-  };
+};
 
 var color_set = [ '#CD212A', '#FFA500', '#0F4C81', '#55C6A9', '#4A5335', '#798EA4', '#FA7A35', '#00758F', '#EDD59E', '#E8A798', '#9B4722', '#6B5876', '#B89B72', '#282D3C', '#EDF1FE', '#A09998'];
 var common_data = cactus_data.filter(d=>d.level==='common');
@@ -62,8 +62,8 @@ var uniq_lk_data = cactus_data.filter(d=>d.level=='uniq' && d.type=='LK');
 var all_genes = ['ARID2','CASP8','CDKN2A','EPHA2','FAT1','FBXW7','HLA-B','HRAS','KMT2B','NOTCH1','PIK3CA','TGFBR2','TP53'];
 var max = _.sum(_.map(cactus_data,d=>d.VAF));
 
-var skew_shift_lk = 50*Math.tan((40*Math.PI)/180);
-var skew_shift_tumor = 80*Math.tan((40*Math.PI)/180);
+var skew_shift_lk = 50*Math.tan((30*Math.PI)/180);
+var skew_shift_tumor = 80*Math.tan((30*Math.PI)/180);
 var uniq_key = _.sortBy(_.uniq(_.map(cactus_data,d=>d.type)));
 var common_data_stack = new Array();
 var uniq_tumor_stack = new Array();
@@ -119,7 +119,7 @@ var y_axis_uniq = d3.scaleLinear()
                     .domain([0, 6])
                     .rangeRound([0,InnerHeight]);
 
-var svg = d3.select("#graph_2").append("svg")
+var svg = d3.select(`#graph_2`).append("svg")
             .attr("preserveAspectRatio", "xMinYMin meet")
             .attr("viewBox", `0 0 ${InnerWidth + Margin.left + Margin.right} ${InnerHeight + Margin.top + Margin.bottom}`)
             .style("background","lightblue")
@@ -213,7 +213,7 @@ svg.append("g").attr('transform', `translate(0, ${InnerHeight})`)
                 .style("font", "15px sans").call(d3.axisBottom(x_uniq)
                                                    .tickFormat(function(d,i){if(i==2||i==3){ return _.toUpper(d); }})
                                                 );
-svg.selectAll(".tick  line").attr("stroke", "rgba(0,0,0,0)");
+svg.selectAll(" .tick  line").attr("stroke", "rgba(0,0,0,0)");
 
 
 // tilt(_.toLower(uniq_key[0]),cactus_meta['Angular Distance']/2);
@@ -231,8 +231,11 @@ $('.tumor_plot').css({
   // 'transform':'skewX(-30deg) translate(88px,0px)'
 });
 
-tilt(_.toLower(uniq_key[0]),-40);
-tilt(_.toLower(uniq_key[1]),40);
+tilt(_.toLower(uniq_key[0]),-20);
+tilt(_.toLower(uniq_key[1]),20);
+tilt_lk(-20);
+tilt_tumor(20);
+
 function tilt(type, degree){
   $(`#patient_${type}`).css({
     'transform-origin':`${x_uniq(uniq_key[1])}px 200px`,
@@ -254,8 +257,6 @@ function tilt_tumor(degree){
   });
 };
 
-tilt_lk(-40);
-tilt_tumor(40);
 function getTransformation(transform) {
   // Create a dummy g for calculation purposes only. This will never
   // be appended to the DOM and will be discarded once this function 
@@ -288,3 +289,204 @@ function getTransformation(transform) {
     scaleY: scaleY
   };
 }
+
+
+
+var check = [
+  {
+    "pat": "RADS19",
+    "common": 10,
+    "only_tumor": 24,
+    "only_lk": 7,
+    "angle": 10
+  },
+  {
+    "pat": "RADS13",
+    "common": 33,
+    "only_tumor": 9,
+    "only_lk": 8,
+    "angle": 11
+  },
+  {
+    "pat": "RADS10",
+    "common": 38,
+    "only_tumor": 27,
+    "only_lk": 11,
+    "angle": 13
+  },
+  {
+    "pat": "RADS6",
+    "common": 9,
+    "only_tumor": 6,
+    "only_lk": 6,
+    "angle": 15
+  },
+  {
+    "pat": "RADS44",
+    "common": 50,
+    "only_tumor": 36,
+    "only_lk": 24,
+    "angle": 15
+  },
+  {
+    "pat": "RADS33",
+    "common": 6,
+    "only_tumor": 1,
+    "only_lk": 1,
+    "angle": 15
+  },
+  {
+    "pat": "RADS5",
+    "common": 22,
+    "only_tumor": 59,
+    "only_lk": 10,
+    "angle": 17
+  },
+  {
+    "pat": "RADS18",
+    "common": 22,
+    "only_tumor": 50,
+    "only_lk": 8,
+    "angle": 18
+  },
+  {
+    "pat": "RADS23",
+    "common": 66,
+    "only_tumor": 20,
+    "only_lk": 10,
+    "angle": 20
+  },
+  {
+    "pat": "RADS17",
+    "common": 36,
+    "only_tumor": 44,
+    "only_lk": 12,
+    "angle": 21
+  },
+  {
+    "pat": "RADS4",
+    "common": 11,
+    "only_tumor": 25,
+    "only_lk": 2,
+    "angle": 22
+  },
+  {
+    "pat": "RADS40",
+    "common": 9,
+    "only_tumor": 19,
+    "only_lk": 46,
+    "angle": 22
+  },
+  {
+    "pat": "RADS27",
+    "common": 48,
+    "only_tumor": 26,
+    "only_lk": 3,
+    "angle": 35
+  },
+  {
+    "pat": "RADS28",
+    "common": 30,
+    "only_tumor": 35,
+    "only_lk": 11,
+    "angle": 35
+  },
+  {
+    "pat": "RADS37",
+    "common": 15,
+    "only_tumor": 30,
+    "only_lk": 23,
+    "angle": 40
+  },
+  {
+    "pat": "RADS47",
+    "common": 29,
+    "only_tumor": 140,
+    "only_lk": 2,
+    "angle": 45
+  },
+  {
+    "pat": "RADS2",
+    "common": 2,
+    "only_tumor": 184,
+    "only_lk": 1,
+    "angle": 45
+  },
+  {
+    "pat": "RADS29",
+    "common": 62,
+    "only_tumor": 40,
+    "only_lk": 65,
+    "angle": 50
+  },
+  {
+    "pat": "RADS3",
+    "common": 14,
+    "only_tumor": 50,
+    "only_lk": 2,
+    "angle": 67
+  },
+  {
+    "pat": "RADS34",
+    "common": 9,
+    "only_tumor": 57,
+    "only_lk": 20,
+    "angle": 76
+  },
+  {
+    "pat": "RADS43",
+    "common": 36,
+    "only_tumor": 41,
+    "only_lk": 6,
+    "angle": 79
+  },
+  {
+    "pat": "RADS36",
+    "common": 10,
+    "only_tumor": 1,
+    "only_lk": 9,
+    "angle": 80
+  },
+  {
+    "pat": "RADS8",
+    "common": 0,
+    "only_tumor": 73,
+    "only_lk": 3,
+    "angle": 90
+  },
+  {
+    "pat": "RADS39",
+    "common": 0,
+    "only_tumor": 16,
+    "only_lk": 23,
+    "angle": 97
+  },
+  {
+    "pat": "RADS7",
+    "common": 0,
+    "only_tumor": 113,
+    "only_lk": 3,
+    "angle": 97
+  },
+  {
+    "pat": "RADS42",
+    "common": 0,
+    "only_tumor": 24,
+    "only_lk": 14,
+    "angle": 106
+  },
+  {
+    "pat": "RADS45",
+    "common": 0,
+    "only_tumor": 8,
+    "only_lk": 5,
+    "angle": 121
+  },
+  {
+    "pat": "RADS52",
+    "common": 1,
+    "only_tumor": 21,
+    "only_lk": 13,
+    "angle": 180
+  }
+];

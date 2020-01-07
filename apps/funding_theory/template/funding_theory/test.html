@@ -1,9 +1,42 @@
 {% extends 'funding_theory/base.html' %}
 
 {% block content %}
+<script type="text/javascript">
+	tinymce.init({
+		selector	: '.tinymce_textarea',
+		branding	: false,
+		theme		: 'silver',
+		menubar		: false,
+		statusbar	: false, 
+		height		: '400',
+	});
+</script>
 
+<section class="section">
+  <div class="container">
 
+  		<form method="post" id="tinymce_form"> {% csrf_token %}
+  			<div class="columns">
+  				<div class="column">
+  				  	<p class="level-item has-text-centered"> Add Cactus Data Here </p> 
+  					<textarea class="tinymce_textarea" id="text_1"></textarea> 
+  				</div>
+  				<div class="column"> 
+  					<p class="level-item has-text-centered"> Add Cactus Meta Here </p>
+  					<textarea class="tinymce_textarea" id="text_2"></textarea> 
+  				</div>
+  			</div>
+  				<br>
+  				<button class="button is-primary is-rounded is-fullwidth" type="submit">Submit</button>
+  		</form>
 
+  </div>    
+</section>
+
+<section class="section">
+	<div class="container" id="for_grid">
+	</div>
+</section>
 
 <section class="section">
 	<div class="container">
@@ -18,4 +51,86 @@
 {% load static %}
 
 <script type="text/javascript" src="{% static 'funding_theory/js/d3_cactus7.js' %}"></script>
+<script type="text/javascript" src="{% static 'funding_theory/js/d3_cactus.js' %}"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('#tinymce_form').submit(function(e){
+
+			var content1 = tinyMCE.get('text_1').getContent();
+			var content2 = tinyMCE.get('text_2').getContent();
+			var data1 = content1.split('<p>').join('').split('</p>').join('').split('&nbsp;').join('');
+			var data_json1 = CSVJSON.csv2json(data1,{parseNumbers: true});
+			// console.log(data_json1);
+			var data2 = content2.split('<p>').join('').split('</p>').join('').split('&nbsp;').join('');
+			var data_json2 = CSVJSON.csv2json(data2,{parseNumbers: true});
+			// console.log(data_json2);
+			var uniq_patients =  _.uniq(_.map(data_json2,d=>d.pat));
+			var min_angle = _.min(_.map(data_json2, d=>d.angle));
+			var max_angle = _.max(_.map(data_json2, d=>d.angle));
+			var min_line_height = _.min(_.concat(_.map(data_json2,d=>d.common), _.map(data_json2,d=>d.only_tumor), _.map(data_json2,d=>d.only_lk)));
+			var max_line_height = _.max(_.concat(_.map(data_json2,d=>d.common), _.map(data_json2,d=>d.only_tumor), _.map(data_json2,d=>d.only_lk)));
+			var uniq_genes = _.uniq(_.map(data_json1, d=>d.gene));
+			var cactus_data = new Array();
+			var cactus_meta = new Array();
+			var max_value = new Array();
+			var max = 0;
+
+			generate_grid(uniq_patients.length, uniq_patients);
+
+			for(i=0;i<uniq_patients.length;i++){
+				var index1 = _.map(data_json1, (d,e)=>d.pat==uniq_patients[i]?e:'').filter(String);
+				var index2 = _.map(data_json2, (d,e)=>d.pat==uniq_patients[i]?e:'').filter(String);
+				cactus_data[i] = _.map(index1,d=>data_json1[d]);
+				cactus_meta[i] = _.map(index2,d=>data_json2[d]);
+				max_value[i] = _.sum(_.map(cactus_data[i],d=>d.VAF),cactus_meta[i][0].common,cactus_meta[i][0].only_lk,cactus_meta[i][0].only_tumor);
+			}
+			max = _.max(max_value);
+			// console.log(max_angle, min_angle, max_line_height, min_line_height, max);
+			// console.log(max_value);
+			// console.log(cactus_data[0],cactus_meta[0][0]);
+			// $('#data_container').html(JSON.stringify(data_json));
+			for(aa=0;aa<uniq_patients.length;aa++){
+				if(!_.isEmpty(cactus_data[aa])){
+					cactus_plot(cactus_data[aa], cactus_meta[aa][0], uniq_genes,  max_angle, min_angle, max_line_height, min_line_height, max);
+				}
+				// generate_plot(aa+1,grouped_data[aa],max);
+			}
+			return false;
+		});
+
+	});
+</script>
+
+<script type="text/javascript">
+	function generate_grid(length, patient){
+
+		var loop = _.ceil(length/5);
+		for(i=0;i<loop;i++){
+			d3.select('#for_grid').appendHTML(`
+				<div class="columns" id="row_${i}">
+				</div>
+				`);
+
+			for(j=0;j<5;j++){
+				if((i*5+j)<patient.length){
+					d3.select(`#row_${i}`).appendHTML(`
+						<div class="column"> <div class="has-text-centered" id="patient_${patient[i*5+j]}">Patient_ID: ${patient[i*5+j]}</div> </div>
+						`);
+				}else{
+					d3.select(`#row_${i}`).appendHTML(`
+						<div class="column"> <div class="has-text-centered"}"></div> </div>
+						`);					
+				}
+			}
+		}
+
+		// for(i=1;i<=(4*loop);i++){
+		// 	if(i>length){
+		// 		$(`#patient_${uniq_patients[i]}`).hide();
+		// 	}
+		// }
+	}
+</script>
 {% endblock %}
