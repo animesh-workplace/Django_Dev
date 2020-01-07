@@ -4,326 +4,256 @@
 		"selected_items":
 		[
 			[
-				"uniq",
-				"uniq_patients"
+				"cont",
+				"content2"
 			],
 			[
-				"x_ax",
-				"x_axis"
+				"text",
+				"text_1"
 			],
 			[
-				"max",
-				"max_value"
+				"com",
+				"command"
 			],
 			[
-				"data",
-				"data_json"
-			],
-			[
-				"tiny",
-				"tinymce_form"
-			],
-			[
-				"di",
-				"div\tTag"
-			],
-			[
-				"json",
-				"json_array"
-			],
-			[
-				"transo",
-				"transform"
-			],
-			[
-				"Str",
-				"Structure"
-			],
-			[
-				"pfam",
-				"pfam_result"
-			],
-			[
-				"fun",
-				"function"
-			],
-			[
-				"print",
-				"print_r"
-			],
-			[
-				"pfa",
-				"pfam_result"
-			],
-			[
-				"Hug",
-				"Hugo_Symbol"
-			],
-			[
-				"str",
-				"structure_array"
-			],
-			[
-				"Hu",
-				"Hugo_Symbol"
-			],
-			[
-				"Row",
-				"Row_Index"
-			],
-			[
-				"sc",
-				"script"
-			],
-			[
-				"c",
-				"cactus_data"
-			],
-			[
-				"commo",
-				"common_genes"
-			],
-			[
-				"comm",
-				"common_genes"
-			],
-			[
-				"get",
-				"get_request"
-			],
-			[
-				"acc",
-				"acc_list"
-			],
-			[
-				"Total",
-				"Total_entries-_"
-			],
-			[
-				"colo",
-				"color_scheme1"
-			],
-			[
-				"type",
-				"type_of_variant1"
-			],
-			[
-				"remove",
-				"remove_rows"
-			],
-			[
-				"appen",
-				"appendHTML"
-			],
-			[
-				"lolo",
-				"lolipop_remove"
-			],
-			[
-				"loli",
-				"lolipop_"
-			],
-			[
-				"intron",
-				"intron_data_test"
-			],
-			[
-				"intron_data",
-				"intron_data_test"
-			],
-			[
-				"inn",
-				"InnerHeight"
-			],
-			[
-				"Inn",
+				"Inner",
 				"InnerWidth"
 			],
 			[
-				"protein",
-				"protein_length"
+				"dat",
+				"data_json"
 			],
 			[
-				"x_axis",
-				"x_axisper3"
+				"genera",
+				"generate_plot"
 			],
 			[
-				"label",
-				"label_name"
+				"fun",
+				"fun\tFunction"
+			],
+			[
+				"un",
+				"uniq_patients"
+			],
+			[
+				"count",
+				"countx"
+			],
+			[
+				"uni",
+				"unique_name"
+			],
+			[
+				"soma",
+				"somatic-summary"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"arc",
+				"arc_radius"
+			],
+			[
+				"sc",
+				"script\tTag"
+			],
+			[
+				"b",
+				"bottom"
+			],
+			[
+				"diff_snp",
+				"diff_snp_loc3"
+			],
+			[
+				"diff",
+				"diff_snp_loc3"
+			],
+			[
+				"mouseo",
+				"mouseout"
+			],
+			[
+				"mouse",
+				"mouseout"
+			],
+			[
+				"selec",
+				"selectAll"
+			],
+			[
+				"gnes",
+				"genes_name"
+			],
+			[
+				"Tot",
+				"Total_entries"
 			],
 			[
 				"Va",
 				"Variant_Classification"
 			],
 			[
-				"labe",
-				"label_name"
-			],
-			[
-				"data1",
-				"data1_tooltip"
-			],
-			[
-				"our",
-				"ourRequest1"
-			],
-			[
-				"entry",
-				"entry_index"
-			],
-			[
-				"gne",
-				"gene_name"
-			],
-			[
-				"diff",
-				"diff_lolipop_snp_loc1"
-			],
-			[
-				"snp_",
-				"snp_num"
-			],
-			[
-				"arr",
-				"Array"
-			],
-			[
-				"tab",
-				"tabName"
-			],
-			[
-				"gene",
-				"gene_name"
-			],
-			[
-				"genes",
-				"genes_name"
-			],
-			[
-				"P",
-				"Protein_Change"
-			],
-			[
-				"too",
-				"data1_tootip"
-			],
-			[
-				"Scal",
-				"Scalelegend"
-			],
-			[
-				"Sc",
-				"Scalelegend"
+				"x_ax",
+				"x_axisper"
 			],
 			[
 				"snp",
-				"snp_num"
+				"snp_loc_name"
 			],
 			[
-				"a",
-				"attr"
+				"gene",
+				"genes_name"
 			],
 			[
-				"select",
-				"selectAll"
-			],
-			[
-				"regions",
-				"regions_start"
-			],
-			[
-				"con",
-				"concat"
-			],
-			[
-				"tick",
-				"tick_values"
-			],
-			[
-				"tic",
-				"tick_values"
-			],
-			[
-				"regio",
-				"regions_end"
+				"sclae",
+				"scaleLinear"
 			],
 			[
 				"scale",
 				"scaleLinear"
+			],
+			[
+				"Inn",
+				"InnerHeight"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"diff_sa",
+				"diff_sample1"
+			],
+			[
+				"Sa",
+				"Sample_id"
+			],
+			[
+				"sa",
+				"sans-serif"
+			],
+			[
+				"Class",
+				"Classification"
+			],
+			[
+				"da",
+				"data3_tooltip"
+			],
+			[
+				"in",
+				"index"
+			],
+			[
+				"GENE",
+				"genes_name"
+			],
+			[
+				"diff_",
+				"diff_variant2"
+			],
+			[
+				"HU",
+				"Hugo_Symbol"
+			],
+			[
+				"var",
+				"variant_name"
+			],
+			[
+				"genes",
+				"genes_loc"
+			],
+			[
+				"V",
+				"Variant_Classification"
+			],
+			[
+				"A",
+				"Array"
+			],
+			[
+				"data",
+				"data1"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"d",
+				"div\tTag"
+			],
+			[
+				"tra",
+				"trace3"
+			],
+			[
+				"trac",
+				"trace2"
+			],
+			[
+				"trace",
+				"trace1"
+			],
+			[
+				"o",
+				"orientation"
+			],
+			[
+				"slcie",
+				"slicevalue"
+			],
+			[
+				"g",
+				"genes_total"
+			],
+			[
+				"se",
+				"section\tTag"
+			],
+			[
+				"src",
+				"src"
+			],
+			[
+				"quer",
+				"query_search"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "all_development/settings.py",
-			"settings":
-			{
-				"buffer_size": 3698,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "apps/funding_theory/template/funding_theory/base.html",
-			"settings":
-			{
-				"buffer_size": 2892,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "apps/funding_theory/template/funding_theory/index.html",
 			"settings":
 			{
-				"buffer_size": 6566,
+				"buffer_size": 6803,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "apps/funding_theory/views.py",
+			"file": "apps/funding_theory/static/funding_theory/js/d3_cactus.js",
 			"settings":
 			{
-				"buffer_size": 296,
+				"buffer_size": 477,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "apps/funding_theory/urls.py",
+			"file": "apps/funding_theory/static/funding_theory/js/d3_test.js",
 			"settings":
 			{
-				"buffer_size": 176,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "apps/funding_theory/template/funding_theory/test.html",
-			"settings":
-			{
-				"buffer_size": 459,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "apps/funding_theory/static/funding_theory/js/d3_cactus7.js",
-			"settings":
-			{
-				"buffer_size": 10483,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "apps/funding_theory/static/funding_theory/css/styles.css",
-			"settings":
-			{
-				"buffer_size": 110,
-				"encoding": "UTF-8",
+				"buffer_size": 1187,
 				"line_ending": "Windows"
 			}
 		}
@@ -339,20 +269,12 @@
 		"last_filter": "",
 		"selected_items":
 		[
-			[
-				"instal",
-				"Package Control: Install Package"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
-			]
 		],
 		"width": 0.0
 	},
 	"console":
 	{
-		"height": 136.0,
+		"height": 0.0,
 		"history":
 		[
 		]
@@ -368,47 +290,149 @@
 	},
 	"expanded_folders":
 	[
-		"/home/icgc/Development/Django_Dev",
-		"/home/icgc/Development/Django_Dev/all_development",
-		"/home/icgc/Development/Django_Dev/apps",
-		"/home/icgc/Development/Django_Dev/apps/funding_theory",
-		"/home/icgc/Development/Django_Dev/apps/funding_theory/static",
-		"/home/icgc/Development/Django_Dev/apps/funding_theory/static/funding_theory",
-		"/home/icgc/Development/Django_Dev/apps/funding_theory/static/funding_theory/css",
-		"/home/icgc/Development/Django_Dev/apps/funding_theory/static/funding_theory/js",
-		"/home/icgc/Development/Django_Dev/apps/funding_theory/template",
-		"/home/icgc/Development/Django_Dev/apps/funding_theory/template/funding_theory"
+		"/D/Development Projects/Django_Dev",
+		"/D/Development Projects/Django_Dev/apps",
+		"/D/Development Projects/Django_Dev/apps/funding_theory",
+		"/D/Development Projects/Django_Dev/apps/funding_theory/static",
+		"/D/Development Projects/Django_Dev/apps/funding_theory/static/funding_theory",
+		"/D/Development Projects/Django_Dev/apps/funding_theory/static/funding_theory/js",
+		"/D/Development Projects/Django_Dev/apps/funding_theory/template",
+		"/D/Development Projects/Django_Dev/apps/funding_theory/template/funding_theory"
 	],
 	"file_history":
 	[
-		"/home/icgc/Development/Django_Dev/all_development/urls.py",
-		"/home/icgc/Development/Django_Dev/apps/funding_theory/static/funding_theory/js/d3-append-html.js",
-		"/opt/lampp/htdocs/nibmg-website/cactus_data",
-		"/opt/lampp/htdocs/nibmg-website/color_scheme",
-		"/opt/lampp/htdocs/nibmg-website/js/d3_cactus3.js",
-		"/opt/lampp/htdocs/nibmg-website/js/d3_cactus2.js",
-		"/opt/lampp/htdocs/nibmg-website/js/d3_snv_class.js",
-		"/opt/lampp/htdocs/nibmg-website/js/all_calculations_query_page.js",
-		"/opt/lampp/htdocs/nibmg-website/js/d3_variant_classification.js",
-		"/opt/lampp/htdocs/nibmg-website/php/query.php",
-		"/opt/lampp/htdocs/nibmg-website/js/d3_cactus.js",
-		"/opt/lampp/htdocs/nibmg-website/php/data.csv",
-		"/run/media/icgc/UBUNTU 18_0/lollipop_fixed",
-		"/home/icgc/scrapping.py",
-		"/opt/lampp/htdocs/nibmg-website/js/d3_remove.js",
-		"/opt/lampp/htdocs/nibmg-website/js/d3_test2.js",
-		"/opt/lampp/htdocs/nibmg-website/js/d3_test.js",
-		"/opt/lampp/htdocs/nibmg-website/js/d3_snv_class_stacked_pie.js",
-		"/opt/lampp/htdocs/nibmg-website/js/d3_dynamic_creation.js",
-		"/run/media/icgc/UBUNTU 18_0/text",
-		"/run/media/icgc/UBUNTU 18_0/all_calculations_query_page_modified.js",
-		"/opt/lampp/htdocs/nibmg-website/js/d3_lolipop.js",
-		"/run/media/icgc/OIIINK/format.html",
-		"/opt/lampp/htdocs/nibmg-website/d3/CHANGES.md"
+		"/D/Development Projects/Django_Dev/all_development/settings.py",
+		"/D/Development Projects/Django_Dev/apps/funding_theory/views.py",
+		"/D/Development Projects/Django_Dev/apps/funding_theory/urls.py",
+		"/D/Development Projects/Django_Dev/apps/funding_theory/static/funding_theory/css/styles.css",
+		"/D/Development Projects/Django_Dev/apps/funding_theory/template/funding_theory/test.html",
+		"/D/Development Projects/Django_Dev/apps/funding_theory/template/funding_theory/index.html",
+		"/D/Development Projects/Django_Dev/apps/funding_theory/static/funding_theory/js/d3_test.js",
+		"/C/Users/sahin/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/profiles.json",
+		"/D/Development Projects/Django_Dev/apps/funding_theory/template/funding_theory/base.html",
+		"/D/Development Projects/Presentation/Library/reveal.js-master/reveal.js-master/demo.html",
+		"/C/Users/sahin/Documents/profile.json",
+		"/D/Development Projects/Presentation/Library/reveal.js-master/reveal.js-master/index.html",
+		"/D/Temporary Files/symec-84exome-dataForPlot_01_01_2020.csv",
+		"/D/Development Projects/Cancer_Database_Website/apps/db_test/views.py",
+		"/D/Development Projects/Cancer_Database_Website/templates/base.html",
+		"/D/Development Projects/Cancer_Database_Website/apps/db_test/static/db_test/js/d3_summary_total_samples.js",
+		"/D/Development Projects/Cancer_Database_Website/apps/db_test/templates/db_test/index.html",
+		"/D/Development Projects/Cancer_Database_Website/apps/db_test/static/db_test/js/d3_dynamic_creation.js",
+		"/D/Development Projects/Cancer_Database_Website/apps/db_test/static/db_test/js/all_calculations_query_page.js",
+		"/D/Development Projects/Cancer_Database_Website/apps/db_test/templates/db_test/database_result.html",
+		"/D/Development Projects/Cancer_Database_Website/apps/db_test/templates/db_test/somatic_summary.html",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website-test/index.html",
+		"/H/NIBMG/dESKTOP/Arindam/demo2",
+		"/H/query.php",
+		"/C/Users/sahin/Desktop/Cancer_Database_Website/apps/db_test/templates/db_test/database_result.html",
+		"/C/Users/sahin/Desktop/Cancer_Database_Website/apps/db_test/templates/db_test/database_search.html",
+		"/C/Users/sahin/Desktop/Cancer_Database_Website/cancer_db/urls.py",
+		"/C/Users/sahin/Desktop/Cancer_Database_Website/apps/db_test/static/db_test/css/my-style.css",
+		"/C/Users/sahin/Desktop/Cancer_Database_Website/apps/db_test/templates/db_test/germline_summary.html",
+		"/C/Users/sahin/Desktop/Cancer_Database_Website/apps/db_test/static/db_test/js/d3_summary_2.js",
+		"/C/Users/sahin/Desktop/Cancer_Database_Website/apps/db_test/static/db_test/js/d3_summary_sample_count_20_genes.js",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/php/d3.php",
+		"/C/Users/sahin/Desktop/Cancer_Database_Website/apps/db_test/static/db_test/js/summary_chart1.js",
+		"/C/Users/sahin/Desktop/Cancer_Database_Website/apps/db_test/models.py",
+		"/C/Users/sahin/Desktop/Cancer_Database_Website/cancer_db/settings.py",
+		"/C/Users/sahin/Desktop/Cancer_Database_Website/apps/db_test/static/db_test/js/all_calculations_query_page.js",
+		"/C/Users/sahin/Desktop/Cancer_Database_Website/apps/db_test/templates/db_test/somatic_result.html",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/php/summary.php",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/js/d3_summary_all_calculations.js",
+		"/C/Users/sahin/Desktop/Cancer_Database_Website/templates/base.html",
+		"/C/Users/sahin/Desktop/Cancer_Database_Website/apps/db_test/templates/db_test/somatic_summary.html",
+		"/E/Website/Worked Html Files/Sushmita Paul Website/Final Design/Complete Website/CBL/cbl.html",
+		"/E/Website/Worked Html Files/Sushmita Paul Website/Final Design/Complete Website/CBL/js/main.js",
+		"/E/Website/Worked Html Files/Sushmita Paul Website/Final Design/Complete Website/teaching.html",
+		"/E/Website/Worked Html Files/Sushmita Paul Website/Final Design/Complete Website/index.html",
+		"/C/Users/sahin/Desktop/Cancer_Database_Website/apps/db_test/templates/db_test/home.html",
+		"/C/Users/sahin/Desktop/New folder/Cancer_Database_Website/cancer_db/urls.py",
+		"/C/Users/sahin/Desktop/New folder/Cancer_Database_Website/cancer_db/settings.py",
+		"/C/Users/sahin/Desktop/New folder/Cancer_Database_Website/cancer_db/settings - Copy.py",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/stackoverflow.html",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/js/d3_summary_sample_count_20_genes.js",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/js/d3_snv_class_stacked_pie.js",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/js/d3_snv_class.js",
+		"/D/Installed Softwares/Xampp/htdocs/cancer-database/index.html",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/js/d3_variant_classification.js",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/js/d3_variant_type.js",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/php/query.php",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/php/cancerdb.php",
+		"/G/Recovered data 11-12-2019 at 15_44_30/NTFS 1/LostFiles2/Thesis (Autosaved).docx",
+		"/D/Temporary Files/Doomsday/Doomsday Clock 01 (of 12) (2017) GetComics.INFO.cbr",
+		"/D/Temporary Files/Websites/Typerite_1_0_0/Typerite_1_0_0/page-joinus.html",
+		"/D/Temporary Files/Websites/Typerite_1_0_0/Typerite_1_0_0/index.html",
+		"/D/Temporary Files/Websites/Typerite_1_0_0/Typerite_1_0_0/page-intervention.html",
+		"/D/Temporary Files/Websites/Typerite_1_0_0/Typerite_1_0_0/page-about.html",
+		"/D/Temporary Files/Websites/Typerite_1_0_0/Typerite_1_0_0/page-gallery.html",
+		"/D/Temporary Files/Websites/Typerite_1_0_0/Typerite_1_0_0/page-contact.html",
+		"/D/Temporary Files/Websites/Typerite_1_0_0/Typerite_1_0_0/css/main.css",
+		"/D/Temporary Files/Websites/Typerite_1_0_0/Typerite_1_0_0/styles.html",
+		"/D/Temporary Files/Websites/Epitome_1_0_0/epitome_1_0_0/css/main.css",
+		"/D/Temporary Files/Websites/Epitome_1_0_0/epitome_1_0_0/index.html",
+		"/D/Temporary Files/Websites/Epitome_1_0_0/epitome_1_0_0/css/base.css",
+		"/D/Temporary Files/Websites/Epitome_1_0_0/epitome_1_0_0/css/vendor.css",
+		"/D/NIBMG/Web-Development Files/TESTING/CodePen_Export_RGOqQY/src/script.js",
+		"/D/Temporary Files/Websites/Epitome_1_0_0/epitome_1_0_0/site.webmanifest",
+		"/D/Temporary Files/d3-key-concepts/d3-key-concepts/09-onelastthing/index.html",
+		"/D/Installed Softwares/Xampp/php/php.ini",
+		"/D/Temporary Files/csvjson-app-master/csvjson-app-master/js/csvjson.min.js",
+		"/D/NIBMG/Web-Development Files/TESTING/CodePen_Export_RGOqQY/dist/script.js",
+		"/D/NIBMG/Web-Development Files/TESTING/CodePen_Export_RGOqQY/dist/index.html",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/go/data.go",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/go/main.go",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/go/pfam.go",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/go/uniprot.go",
+		"/I/d3_summary_all_calculations.js",
+		"/I/all_calculations_query_page.js",
+		"/I/for_summary_page",
+		"/I/for_query_page.html",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/js/d3_summary_total_samples.js",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/js/summary_chart1.js",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/js/all_calculations_query_page.js",
+		"/D/Temporary Files/caged-d3-tip-517b147/index.js",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/stack.html",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/check.html",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/php/d3_2.php",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/php/running_data.php",
+		"/D/Temporary Files/d3-tip-master/d3-tip-master/d3-tip.js",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/data.csv",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/js/app.js",
+		"/D/Temporary Files/Imminent_1_0_0/Imminent_1_0_0/index-particles.html",
+		"/D/Temporary Files/Web-Services.pem",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/js/test.js",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/js/summary_chart.js",
+		"/D/Temporary Files/dataframe-js-develop/dataframe-js-develop/dist/dataframe.js",
+		"/D/Temporary Files/screencasts-gh-pages/screencasts-gh-pages/splittingCharts/examples/code/snapshot11/README.md",
+		"/D/NIBMG/Web-Development Files/TESTING/D3js/js/app.js",
+		"/D/NIBMG/Web-Development Files/TESTING/D3js/d3.html",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/d3/API.md",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/register.html",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/login.html",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/index.html",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/summary.html",
+		"/C/Users/sahin/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/D/Temporary Files/bamCleave",
+		"/D/d/login.php",
+		"/D/d/CodePen_Export_RGOqQY/CodePen_Export_RGOqQY/dist/script.js",
+		"/D/d/muts-needle-plot-v0.4.0/bbglab-muts-needle-plot-ef818c3/index.html",
+		"/D/d/Codes/animate.m",
+		"/D/dOWNLOADS/CodePen_Export_RGOqQY/CodePen_Export_RGOqQY/dist/script.js",
+		"/D/dOWNLOADS/CodePen_Export_RGOqQY/CodePen_Export_RGOqQY/dist/index.html",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/php/test.php",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/php/register.php",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/chart.html",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/js/app1.js",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/test.js",
+		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/d3/d3.js",
+		"/C/Users/sahin/Desktop/Dev/animesh/src/test.py",
+		"/D/htdocd/nibmg-website/php/query.php",
+		"/D/htdocd/nibmg-website/php/login.php"
 	],
 	"find":
 	{
-		"height": 30.0
+		"height": 32.0
 	},
 	"find_in_files":
 	{
@@ -422,17 +446,45 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"db_test",
-			"'",
-			"\"",
-			"38",
-			"z1",
-			" ",
-			"remove",
-			"intron",
-			"tab",
-			">\n",
-			"snp"
+			"footer",
+			"loader",
+			"preloader",
+			"section",
+			"contact",
+			"column-large",
+			"prelo",
+			"logo",
+			"max_ex",
+			"Sample_id",
+			"Hugo_Symbol",
+			"cDNA_Change",
+			"Genome_Change",
+			"variant_type",
+			"Variant_Type",
+			"Variant_Classification",
+			"js",
+			"data2",
+			"data1",
+			"30",
+			"tip4",
+			"diff_sample",
+			"console",
+			"indigo",
+			"svg4",
+			"data1",
+			"genes_loc",
+			"y_axis",
+			"600",
+			"            var svg = d3.select(\"body\").append(\"svg\")\n                        .attr(\"width\", width).attr(\"height\", height)\n                        .style(\"background\", \"lightblue\")\n                        .append(\"g\")\n                        .attr(\"transform\", \"translate(\" + spacing/2 + \",\" + spacing/2 + \")\");",
+			");\n",
+			"sales",
+			"salesperson",
+			"data",
+			"z",
+			"10",
+			"real",
+			"300",
+			"updates"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -450,83 +502,22 @@
 	"folders":
 	[
 		{
-			"path": "/home/icgc/Development/Django_Dev"
+			"path": "D:\\Development Projects\\Django_Dev"
 		}
 	],
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "all_development/settings.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3698,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 816.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "apps/funding_theory/template/funding_theory/base.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2892,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1053,
-								1053
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 102.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "apps/funding_theory/template/funding_theory/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6566,
+						"buffer_size": 6803,
 						"regions":
 						{
 							"col_00000001":
@@ -535,12 +526,12 @@
 								"regions":
 								[
 									[
-										6203,
-										6216
+										6440,
+										6453
 									],
 									[
-										6278,
-										6291
+										6515,
+										6528
 									]
 								],
 								"scope": "col_00000001"
@@ -552,12 +543,12 @@
 								"regions":
 								[
 									[
-										6144,
-										6144
+										6381,
+										6381
 									],
 									[
-										6220,
-										6220
+										6457,
+										6457
 									]
 								],
 								"scope": "col_gutter"
@@ -568,8 +559,8 @@
 								"regions":
 								[
 									[
-										4831,
-										4840
+										5068,
+										5077
 									]
 								],
 								"scope": "col_ADD8E6FF"
@@ -581,8 +572,8 @@
 								"regions":
 								[
 									[
-										4794,
-										4794
+										5031,
+										5031
 									]
 								],
 								"scope": "col_gutter"
@@ -616,210 +607,38 @@
 						"selection":
 						[
 							[
-								4200,
-								4200
+								567,
+								567
 							]
 						],
 						"settings":
 						{
-							"open_with_edit": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1302.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "apps/funding_theory/views.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 296,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								285,
-								285
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "apps/funding_theory/urls.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 176,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								148,
-								148
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "apps/funding_theory/template/funding_theory/test.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 459,
-						"regions":
-						{
-							"col_00000001":
-							{
-								"flags": 16,
-								"regions":
-								[
-								],
-								"scope": "col_00000001"
-							},
-							"col_00000001_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_00000001_circle.png",
-								"regions":
-								[
-								],
-								"scope": "col_gutter"
-							},
-							"col_ADD8E6FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-								],
-								"scope": "col_ADD8E6FF"
-							},
-							"col_ADD8E6FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_ADD8E6FF_circle.png",
-								"regions":
-								[
-								],
-								"scope": "col_gutter"
-							},
-							"col_C0C0C0FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-								],
-								"scope": "col_C0C0C0FF"
-							},
-							"col_C0C0C0FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_C0C0C0FF_circle.png",
-								"regions":
-								[
-								],
-								"scope": "col_gutter"
-							}
-						},
-						"selection":
-						[
-							[
-								444,
-								444
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1427.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "apps/funding_theory/static/funding_theory/js/d3_cactus7.js",
+					"buffer": 1,
+					"file": "apps/funding_theory/static/funding_theory/js/d3_cactus.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10483,
+						"buffer_size": 477,
 						"regions":
 						{
-							"col_00000001":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										10021,
-										10034
-									],
-									[
-										10098,
-										10111
-									]
-								],
-								"scope": "col_00000001"
-							},
-							"col_00000001_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_00000001_circle.png",
-								"regions":
-								[
-									[
-										9976,
-										9976
-									],
-									[
-										10038,
-										10038
-									]
-								],
-								"scope": "col_gutter"
-							},
 							"col_00758FFF":
 							{
 								"flags": 16,
 								"regions":
 								[
 									[
-										1118,
-										1125
+										161,
+										168
 									]
 								],
 								"scope": "col_00758FFF"
@@ -831,33 +650,8 @@
 								"regions":
 								[
 									[
-										1022,
-										1022
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_008000FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										5493,
-										5498
-									]
-								],
-								"scope": "col_008000FF"
-							},
-							"col_008000FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_008000FF_circle.png",
-								"regions":
-								[
-									[
-										5462,
-										5462
+										65,
+										65
 									]
 								],
 								"scope": "col_gutter"
@@ -868,8 +662,8 @@
 								"regions":
 								[
 									[
-										1063,
-										1070
+										106,
+										113
 									]
 								],
 								"scope": "col_0F4C81FF"
@@ -881,8 +675,8 @@
 								"regions":
 								[
 									[
-										1022,
-										1022
+										65,
+										65
 									]
 								],
 								"scope": "col_gutter"
@@ -893,8 +687,8 @@
 								"regions":
 								[
 									[
-										1184,
-										1191
+										227,
+										234
 									]
 								],
 								"scope": "col_282D3CFF"
@@ -906,8 +700,8 @@
 								"regions":
 								[
 									[
-										1022,
-										1022
+										65,
+										65
 									]
 								],
 								"scope": "col_gutter"
@@ -918,8 +712,8 @@
 								"regions":
 								[
 									[
-										1085,
-										1092
+										128,
+										135
 									]
 								],
 								"scope": "col_4A5335FF"
@@ -931,8 +725,8 @@
 								"regions":
 								[
 									[
-										1022,
-										1022
+										65,
+										65
 									]
 								],
 								"scope": "col_gutter"
@@ -943,8 +737,8 @@
 								"regions":
 								[
 									[
-										1074,
-										1081
+										117,
+										124
 									]
 								],
 								"scope": "col_55C6A9FF"
@@ -956,8 +750,8 @@
 								"regions":
 								[
 									[
-										1022,
-										1022
+										65,
+										65
 									]
 								],
 								"scope": "col_gutter"
@@ -968,8 +762,8 @@
 								"regions":
 								[
 									[
-										1162,
-										1169
+										205,
+										212
 									]
 								],
 								"scope": "col_6B5876FF"
@@ -981,8 +775,8 @@
 								"regions":
 								[
 									[
-										1022,
-										1022
+										65,
+										65
 									]
 								],
 								"scope": "col_gutter"
@@ -993,8 +787,8 @@
 								"regions":
 								[
 									[
-										1096,
-										1103
+										139,
+										146
 									]
 								],
 								"scope": "col_798EA4FF"
@@ -1006,8 +800,8 @@
 								"regions":
 								[
 									[
-										1022,
-										1022
+										65,
+										65
 									]
 								],
 								"scope": "col_gutter"
@@ -1018,8 +812,8 @@
 								"regions":
 								[
 									[
-										1151,
-										1158
+										194,
+										201
 									]
 								],
 								"scope": "col_9B4722FF"
@@ -1031,8 +825,8 @@
 								"regions":
 								[
 									[
-										1022,
-										1022
+										65,
+										65
 									]
 								],
 								"scope": "col_gutter"
@@ -1043,8 +837,8 @@
 								"regions":
 								[
 									[
-										1206,
-										1213
+										249,
+										256
 									]
 								],
 								"scope": "col_A09998FF"
@@ -1056,33 +850,8 @@
 								"regions":
 								[
 									[
-										1022,
-										1022
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_ADD8E6FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										3663,
-										3672
-									]
-								],
-								"scope": "col_ADD8E6FF"
-							},
-							"col_ADD8E6FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_ADD8E6FF_circle.png",
-								"regions":
-								[
-									[
-										3630,
-										3630
+										65,
+										65
 									]
 								],
 								"scope": "col_gutter"
@@ -1093,8 +862,8 @@
 								"regions":
 								[
 									[
-										1173,
-										1180
+										216,
+										223
 									]
 								],
 								"scope": "col_B89B72FF"
@@ -1106,8 +875,8 @@
 								"regions":
 								[
 									[
-										1022,
-										1022
+										65,
+										65
 									]
 								],
 								"scope": "col_gutter"
@@ -1118,8 +887,8 @@
 								"regions":
 								[
 									[
-										1041,
-										1048
+										84,
+										91
 									]
 								],
 								"scope": "col_CD212AFF"
@@ -1131,8 +900,8 @@
 								"regions":
 								[
 									[
-										1022,
-										1022
+										65,
+										65
 									]
 								],
 								"scope": "col_gutter"
@@ -1143,8 +912,8 @@
 								"regions":
 								[
 									[
-										1140,
-										1147
+										183,
+										190
 									]
 								],
 								"scope": "col_E8A798FF"
@@ -1156,8 +925,8 @@
 								"regions":
 								[
 									[
-										1022,
-										1022
+										65,
+										65
 									]
 								],
 								"scope": "col_gutter"
@@ -1168,8 +937,8 @@
 								"regions":
 								[
 									[
-										1129,
-										1136
+										172,
+										179
 									]
 								],
 								"scope": "col_EDD59EFF"
@@ -1181,8 +950,8 @@
 								"regions":
 								[
 									[
-										1022,
-										1022
+										65,
+										65
 									]
 								],
 								"scope": "col_gutter"
@@ -1193,8 +962,8 @@
 								"regions":
 								[
 									[
-										1195,
-										1202
+										238,
+										245
 									]
 								],
 								"scope": "col_EDF1FEFF"
@@ -1206,8 +975,8 @@
 								"regions":
 								[
 									[
-										1022,
-										1022
+										65,
+										65
 									]
 								],
 								"scope": "col_gutter"
@@ -1218,8 +987,8 @@
 								"regions":
 								[
 									[
-										1107,
-										1114
+										150,
+										157
 									]
 								],
 								"scope": "col_FA7A35FF"
@@ -1231,33 +1000,8 @@
 								"regions":
 								[
 									[
-										1022,
-										1022
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_FF0000FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										5760,
-										5763
-									]
-								],
-								"scope": "col_FF0000FF"
-							},
-							"col_FF0000FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_FF0000FF_circle.png",
-								"regions":
-								[
-									[
-										5729,
-										5729
+										65,
+										65
 									]
 								],
 								"scope": "col_gutter"
@@ -1268,8 +1012,8 @@
 								"regions":
 								[
 									[
-										1052,
-										1059
+										95,
+										102
 									]
 								],
 								"scope": "col_FFA500FF"
@@ -1281,33 +1025,8 @@
 								"regions":
 								[
 									[
-										1022,
-										1022
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_FFFF00FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										7665,
-										7671
-									]
-								],
-								"scope": "col_FFFF00FF"
-							},
-							"col_FFFF00FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_FFFF00FF_circle.png",
-								"regions":
-								[
-									[
-										7634,
-										7634
+										65,
+										65
 									]
 								],
 								"scope": "col_gutter"
@@ -1316,8 +1035,139 @@
 						"selection":
 						[
 							[
-								9244,
-								9244
+								477,
+								477
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "apps/funding_theory/static/funding_theory/js/d3_test.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1187,
+						"regions":
+						{
+							"col_000000FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										915,
+										920
+									]
+								],
+								"scope": "col_000000FF"
+							},
+							"col_000000FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_000000FF_circle.png",
+								"regions":
+								[
+									[
+										895,
+										895
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_0000FFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1043,
+										1047
+									]
+								],
+								"scope": "col_0000FFFF"
+							},
+							"col_0000FFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_0000FFFF_circle.png",
+								"regions":
+								[
+									[
+										1025,
+										1025
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_ADD8E6FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										424,
+										433
+									]
+								],
+								"scope": "col_ADD8E6FF"
+							},
+							"col_ADD8E6FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_ADD8E6FF_circle.png",
+								"regions":
+								[
+									[
+										390,
+										390
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FF0000FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										651,
+										654
+									]
+								],
+								"scope": "col_FF0000FF"
+							},
+							"col_FF0000FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FF0000FF_circle.png",
+								"regions":
+								[
+									[
+										633,
+										633
+									]
+								],
+								"scope": "col_gutter"
+							}
+						},
+						"selection":
+						[
+							[
+								57,
+								57
 							]
 						],
 						"settings":
@@ -1325,34 +1175,6 @@
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4351.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "apps/funding_theory/static/funding_theory/css/styles.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 110,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								110,
-								110
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1366,11 +1188,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 30.0
+		"height": 32.0
 	},
 	"input":
 	{
-		"height": 43.0
+		"height": 45.0
 	},
 	"layout":
 	{
@@ -1401,13 +1223,13 @@
 	},
 	"output.unsaved_changes":
 	{
-		"height": 97.0
+		"height": 154.0
 	},
 	"pinned_build_system": "",
 	"project": "",
 	"replace":
 	{
-		"height": 56.0
+		"height": 60.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1427,7 +1249,7 @@
 		[
 			[
 				"",
-				"/opt/lampp/htdocs/nibmg-website/sublime_workspace.sublime-project"
+				"D:\\Installed Softwares\\Xampp\\htdocs\\nibmg-website\\sublime_workspace.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -1449,7 +1271,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 301.0,
+	"side_bar_width": 306.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
