@@ -136,7 +136,6 @@ function cactus_plot(cactus_data, cactus_meta, all_genes, max_angle, min_angle, 
 		            .append("g")
 		            .attr("transform", "translate(" + Margin.left + "," + Margin.top + ")");
 
-		if(!_.isEmpty(cactus_data))
 		var group1 = svg.append("g")
 						.attr("class", "common_plot");
 			
@@ -161,16 +160,17 @@ function cactus_plot(cactus_data, cactus_meta, all_genes, max_angle, min_angle, 
 
 		var common_plot_height = _.ceil(_.max([_.sum(common_plot_length_lk),_.sum(common_plot_length_tumor)]));
 		var common_plot_width = _.sum([y_axis_uniq(1), y_axis_uniq(1)]);
-		console.log(patient_name, common_plot_width);
 
-var outer_rectangle = svg.append('rect')
-						 .attr('x', x_uniq(uniq_key[0]))
-						 .attr('y', y_uniq(0) - common_plot_height)
-						 .attr('height', common_plot_height)
-						 .attr('width', common_plot_width + 2)
-						 .attr('stroke', 'black')
-						 .attr('fill', 'none')
-						 .attr('stroke-width', 1.3);		
+		if(common_plot_height>0){
+			var outer_rectangle = svg.append('rect')
+									 .attr('x', x_uniq(uniq_key[0]))
+									 .attr('y', y_uniq(0) - common_plot_height)
+									 .attr('height', common_plot_height)
+									 .attr('width', common_plot_width + 2)
+									 .attr('stroke', 'black')
+									 .attr('fill', 'none')
+									 .attr('stroke-width', 1.3);		
+		}
 	
 		var line_common = svg.append('line')
 		               		 .attr('x1',x_uniq(uniq_key[1]))
@@ -189,8 +189,7 @@ var outer_rectangle = svg.append('rect')
 						      		 endAngle: Math.PI*0.5
 						    	 }))
 						       .attr('id',`circle_common_${patient_name}`)               		   
-		               		   .attr('stroke','black')
-		               		   .attr('stroke-width',4);
+		               		   .attr('fill','black');
 
 		var line_lk = svg.append('line')
 		               	 .attr('x1',x_uniq(uniq_key[1]))
@@ -206,8 +205,7 @@ var outer_rectangle = svg.append('rect')
 		               	   .attr('cy',InnerHeight - common_plot_height - line_height_scale(cactus_meta.common) - line_height_scale(cactus_meta.only_lk))
 		               	   .attr('r',2.5)
 		               	   .attr('id',`circle_lk_${patient_name}`)
-		               	   .attr('stroke','black')
-		               	   .attr('stroke-width',4);		               	 
+		               	   .attr('fill','black');	               	 
 	
 		var line_tumor = svg.append('line')
 		               	 	.attr('x1',x_uniq(uniq_key[1]))
@@ -230,8 +228,7 @@ var outer_rectangle = svg.append('rect')
 		               		  .attr('cy',InnerHeight - common_plot_height - line_height_scale(cactus_meta.common) - line_height_scale(cactus_meta.only_tumor))
 		               		  .attr('r',2.5)
 		               		  .attr('id',`circle_tumor_${patient_name}`)
-		               		  .attr('stroke','black')
-		               		  .attr('stroke-width',4);
+		               		  .attr('fill','black');
 
 	
 		var group2 = svg.append("g")
@@ -269,12 +266,12 @@ var outer_rectangle = svg.append('rect')
 		svg.selectAll(".tick  line").attr("stroke", "rgba(0,0,0,0)");      
 	
 		var rotation_angle = angle_scale(cactus_meta.angle)/2;
-		rotate_line(_.toLower(uniq_key[0]),-rotation_angle);
-		rotate_line(_.toLower(uniq_key[1]),rotation_angle);
-		rotate_lk(-rotation_angle);
-		rotate_tumor(rotation_angle);
-		rotate_circle_lk(-rotation_angle);
-		rotate_circle_tumor(rotation_angle);
-		translate_circle_common();
+			rotate_line(_.toLower(uniq_key[0]),-rotation_angle);
+			rotate_line(_.toLower(uniq_key[1]),rotation_angle);
+			rotate_lk(-rotation_angle);
+			rotate_tumor(rotation_angle);
+			rotate_circle_lk(-rotation_angle);
+			rotate_circle_tumor(rotation_angle);
+			translate_circle_common();
 }
 
