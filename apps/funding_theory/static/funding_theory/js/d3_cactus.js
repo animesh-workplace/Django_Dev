@@ -56,7 +56,8 @@ function cactus_plot(cactus_data, cactus_meta, all_genes, max_angle, min_angle, 
 		var uniq_key = _.sortBy(_.uniq(_.map(cactus_data,d=>d.type)));
 		if(uniq_key.length<2){
 			uniq_key=='tumor'?uniq_key.push('LK'):uniq_key.push('tumor');
-			uniq_key = _.sortBy(uniq_key);
+			uniq_key=='tumor'?uniq_key.push('LK'):uniq_key.push('tumor');
+			uniq_key = _.sortBy(_.uniq(uniq_key));
 		}
 			// Separating the data based on the level
 		var common_data = cactus_data.filter(d=>d.level==='common');

@@ -93,12 +93,12 @@
 			max = _.max(max_value);
 
 			for(aa=0;aa<uniq_patients.length;aa++){
-				if(!_.isEmpty(cactus_data[aa])){
+				// if(!_.isEmpty(cactus_data[aa])){
 					cactus_plot(cactus_data[aa], cactus_meta[aa][0], uniq_genes,  max_angle, min_angle, max_line_height, min_line_height, max);
 					download_link(`svg_download_${uniq_patients[aa]}`, uniq_patients[aa]);
-				}else{
-					$(`#download_${uniq_patients[aa]}`).hide();
-				}
+				// }else{
+				// 	$(`#download_${uniq_patients[aa]}`).hide();
+				// }
 			}
 			return false;
 		});
