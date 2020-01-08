@@ -4,257 +4,383 @@
 		"selected_items":
 		[
 			[
-				"cont",
-				"content2"
+				"uniq",
+				"uniq_genes"
 			],
 			[
-				"text",
-				"text_1"
+				"common_plo",
+				"common_plot_height"
+			],
+			[
+				"strok",
+				"stroke-width"
+			],
+			[
+				"x",
+				"x"
+			],
+			[
+				"trans",
+				"translate_circle_common"
+			],
+			[
+				"svg",
+				"svg_name"
+			],
+			[
+				"cac",
+				"cactus_data"
+			],
+			[
+				"data",
+				"data_json2"
+			],
+			[
+				"only",
+				"only_tumor"
+			],
+			[
+				"cactu",
+				"cactus_data"
+			],
+			[
+				"pat",
+				"patient"
+			],
+			[
+				"pate",
+				"patient_name"
+			],
+			[
+				"max",
+				"max_line_height"
+			],
+			[
+				"min",
+				"min_angle"
 			],
 			[
 				"com",
-				"command"
+				"common_plot_length_lk"
 			],
 			[
-				"Inner",
-				"InnerWidth"
+				"angle",
+				"angle_scale"
 			],
 			[
-				"dat",
-				"data_json"
+				"cactus",
+				"cactus_meta"
 			],
 			[
-				"genera",
-				"generate_plot"
+				"line",
+				"line_height_scale"
+			],
+			[
+				"max_",
+				"max_line"
+			],
+			[
+				"da",
+				"data_json2"
+			],
+			[
+				"til",
+				"tilt_lk"
+			],
+			[
+				"skew",
+				"skew_shift_tumor"
+			],
+			[
+				"cact",
+				"cactus_meta"
+			],
+			[
+				"common_pl",
+				"common_plot"
+			],
+			[
+				"tran",
+				"translate"
+			],
+			[
+				"tra",
+				"translate"
+			],
+			[
+				"x_ax",
+				"x_axis"
+			],
+			[
+				"tiny",
+				"tinymce_form"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"json",
+				"json_array"
+			],
+			[
+				"transo",
+				"transform"
+			],
+			[
+				"Str",
+				"Structure"
+			],
+			[
+				"pfam",
+				"pfam_result"
 			],
 			[
 				"fun",
-				"fun\tFunction"
+				"function"
 			],
 			[
-				"un",
-				"uniq_patients"
+				"print",
+				"print_r"
 			],
 			[
-				"count",
-				"countx"
+				"pfa",
+				"pfam_result"
 			],
 			[
-				"uni",
-				"unique_name"
+				"Hug",
+				"Hugo_Symbol"
 			],
 			[
-				"soma",
-				"somatic-summary"
+				"str",
+				"structure_array"
 			],
 			[
-				"font",
-				"font-size"
+				"Hu",
+				"Hugo_Symbol"
 			],
 			[
-				"fo",
-				"font-size"
-			],
-			[
-				"arc",
-				"arc_radius"
+				"Row",
+				"Row_Index"
 			],
 			[
 				"sc",
-				"script\tTag"
+				"script"
 			],
 			[
-				"b",
-				"bottom"
+				"c",
+				"cactus_data"
 			],
 			[
-				"diff_snp",
-				"diff_snp_loc3"
+				"commo",
+				"common_genes"
 			],
 			[
-				"diff",
-				"diff_snp_loc3"
+				"comm",
+				"common_genes"
 			],
 			[
-				"mouseo",
-				"mouseout"
+				"get",
+				"get_request"
 			],
 			[
-				"mouse",
-				"mouseout"
+				"acc",
+				"acc_list"
 			],
 			[
-				"selec",
-				"selectAll"
+				"Total",
+				"Total_entries-_"
 			],
 			[
-				"gnes",
-				"genes_name"
+				"colo",
+				"color_scheme1"
 			],
 			[
-				"Tot",
-				"Total_entries"
+				"type",
+				"type_of_variant1"
+			],
+			[
+				"remove",
+				"remove_rows"
+			],
+			[
+				"appen",
+				"appendHTML"
+			],
+			[
+				"lolo",
+				"lolipop_remove"
+			],
+			[
+				"loli",
+				"lolipop_"
+			],
+			[
+				"intron",
+				"intron_data_test"
+			],
+			[
+				"intron_data",
+				"intron_data_test"
+			],
+			[
+				"inn",
+				"InnerHeight"
+			],
+			[
+				"Inn",
+				"InnerWidth"
+			],
+			[
+				"protein",
+				"protein_length"
+			],
+			[
+				"x_axis",
+				"x_axisper3"
+			],
+			[
+				"label",
+				"label_name"
 			],
 			[
 				"Va",
 				"Variant_Classification"
 			],
 			[
-				"x_ax",
-				"x_axisper"
+				"labe",
+				"label_name"
 			],
 			[
-				"snp",
-				"snp_loc_name"
+				"data1",
+				"data1_tooltip"
+			],
+			[
+				"our",
+				"ourRequest1"
+			],
+			[
+				"entry",
+				"entry_index"
+			],
+			[
+				"gne",
+				"gene_name"
+			],
+			[
+				"diff",
+				"diff_lolipop_snp_loc1"
+			],
+			[
+				"snp_",
+				"snp_num"
+			],
+			[
+				"arr",
+				"Array"
+			],
+			[
+				"tab",
+				"tabName"
 			],
 			[
 				"gene",
+				"gene_name"
+			],
+			[
+				"genes",
 				"genes_name"
 			],
 			[
-				"sclae",
-				"scaleLinear"
+				"P",
+				"Protein_Change"
+			],
+			[
+				"too",
+				"data1_tootip"
+			],
+			[
+				"Scal",
+				"Scalelegend"
+			],
+			[
+				"Sc",
+				"Scalelegend"
+			],
+			[
+				"snp",
+				"snp_num"
+			],
+			[
+				"a",
+				"attr"
+			],
+			[
+				"select",
+				"selectAll"
+			],
+			[
+				"regions",
+				"regions_start"
+			],
+			[
+				"con",
+				"concat"
+			],
+			[
+				"tick",
+				"tick_values"
+			],
+			[
+				"tic",
+				"tick_values"
+			],
+			[
+				"regio",
+				"regions_end"
 			],
 			[
 				"scale",
 				"scaleLinear"
-			],
-			[
-				"Inn",
-				"InnerHeight"
-			],
-			[
-				"le",
-				"length"
-			],
-			[
-				"diff_sa",
-				"diff_sample1"
-			],
-			[
-				"Sa",
-				"Sample_id"
-			],
-			[
-				"sa",
-				"sans-serif"
-			],
-			[
-				"Class",
-				"Classification"
-			],
-			[
-				"da",
-				"data3_tooltip"
-			],
-			[
-				"in",
-				"index"
-			],
-			[
-				"GENE",
-				"genes_name"
-			],
-			[
-				"diff_",
-				"diff_variant2"
-			],
-			[
-				"HU",
-				"Hugo_Symbol"
-			],
-			[
-				"var",
-				"variant_name"
-			],
-			[
-				"genes",
-				"genes_loc"
-			],
-			[
-				"V",
-				"Variant_Classification"
-			],
-			[
-				"A",
-				"Array"
-			],
-			[
-				"data",
-				"data1"
-			],
-			[
-				"json",
-				"json_encode"
-			],
-			[
-				"d",
-				"div\tTag"
-			],
-			[
-				"tra",
-				"trace3"
-			],
-			[
-				"trac",
-				"trace2"
-			],
-			[
-				"trace",
-				"trace1"
-			],
-			[
-				"o",
-				"orientation"
-			],
-			[
-				"slcie",
-				"slicevalue"
-			],
-			[
-				"g",
-				"genes_total"
-			],
-			[
-				"se",
-				"section\tTag"
-			],
-			[
-				"src",
-				"src"
-			],
-			[
-				"quer",
-				"query_search"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
+			"file": "apps/funding_theory/template/funding_theory/base.html",
+			"settings":
+			{
+				"buffer_size": 2892,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "apps/funding_theory/template/funding_theory/index.html",
 			"settings":
 			{
-				"buffer_size": 6803,
+				"buffer_size": 3617,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "apps/funding_theory/template/funding_theory/test.html",
+			"settings":
+			{
+				"buffer_size": 6307,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "apps/funding_theory/static/funding_theory/js/d3_cactus.js",
 			"settings":
 			{
-				"buffer_size": 477,
+				"buffer_size": 12797,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "apps/funding_theory/static/funding_theory/js/d3_test.js",
-			"settings":
-			{
-				"buffer_size": 1187,
-				"line_ending": "Windows"
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -269,12 +395,20 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
 		],
 		"width": 0.0
 	},
 	"console":
 	{
-		"height": 0.0,
+		"height": 136.0,
 		"history":
 		[
 		]
@@ -290,149 +424,53 @@
 	},
 	"expanded_folders":
 	[
-		"/D/Development Projects/Django_Dev",
-		"/D/Development Projects/Django_Dev/apps",
-		"/D/Development Projects/Django_Dev/apps/funding_theory",
-		"/D/Development Projects/Django_Dev/apps/funding_theory/static",
-		"/D/Development Projects/Django_Dev/apps/funding_theory/static/funding_theory",
-		"/D/Development Projects/Django_Dev/apps/funding_theory/static/funding_theory/js",
-		"/D/Development Projects/Django_Dev/apps/funding_theory/template",
-		"/D/Development Projects/Django_Dev/apps/funding_theory/template/funding_theory"
+		"/home/icgc/Development/Django_Dev",
+		"/home/icgc/Development/Django_Dev/apps",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/static",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/static/funding_theory",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/static/funding_theory/css",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/static/funding_theory/js",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/template",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/template/funding_theory"
 	],
 	"file_history":
 	[
-		"/D/Development Projects/Django_Dev/all_development/settings.py",
-		"/D/Development Projects/Django_Dev/apps/funding_theory/views.py",
-		"/D/Development Projects/Django_Dev/apps/funding_theory/urls.py",
-		"/D/Development Projects/Django_Dev/apps/funding_theory/static/funding_theory/css/styles.css",
-		"/D/Development Projects/Django_Dev/apps/funding_theory/template/funding_theory/test.html",
-		"/D/Development Projects/Django_Dev/apps/funding_theory/template/funding_theory/index.html",
-		"/D/Development Projects/Django_Dev/apps/funding_theory/static/funding_theory/js/d3_test.js",
-		"/C/Users/sahin/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/profiles.json",
-		"/D/Development Projects/Django_Dev/apps/funding_theory/template/funding_theory/base.html",
-		"/D/Development Projects/Presentation/Library/reveal.js-master/reveal.js-master/demo.html",
-		"/C/Users/sahin/Documents/profile.json",
-		"/D/Development Projects/Presentation/Library/reveal.js-master/reveal.js-master/index.html",
-		"/D/Temporary Files/symec-84exome-dataForPlot_01_01_2020.csv",
-		"/D/Development Projects/Cancer_Database_Website/apps/db_test/views.py",
-		"/D/Development Projects/Cancer_Database_Website/templates/base.html",
-		"/D/Development Projects/Cancer_Database_Website/apps/db_test/static/db_test/js/d3_summary_total_samples.js",
-		"/D/Development Projects/Cancer_Database_Website/apps/db_test/templates/db_test/index.html",
-		"/D/Development Projects/Cancer_Database_Website/apps/db_test/static/db_test/js/d3_dynamic_creation.js",
-		"/D/Development Projects/Cancer_Database_Website/apps/db_test/static/db_test/js/all_calculations_query_page.js",
-		"/D/Development Projects/Cancer_Database_Website/apps/db_test/templates/db_test/database_result.html",
-		"/D/Development Projects/Cancer_Database_Website/apps/db_test/templates/db_test/somatic_summary.html",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website-test/index.html",
-		"/H/NIBMG/dESKTOP/Arindam/demo2",
-		"/H/query.php",
-		"/C/Users/sahin/Desktop/Cancer_Database_Website/apps/db_test/templates/db_test/database_result.html",
-		"/C/Users/sahin/Desktop/Cancer_Database_Website/apps/db_test/templates/db_test/database_search.html",
-		"/C/Users/sahin/Desktop/Cancer_Database_Website/cancer_db/urls.py",
-		"/C/Users/sahin/Desktop/Cancer_Database_Website/apps/db_test/static/db_test/css/my-style.css",
-		"/C/Users/sahin/Desktop/Cancer_Database_Website/apps/db_test/templates/db_test/germline_summary.html",
-		"/C/Users/sahin/Desktop/Cancer_Database_Website/apps/db_test/static/db_test/js/d3_summary_2.js",
-		"/C/Users/sahin/Desktop/Cancer_Database_Website/apps/db_test/static/db_test/js/d3_summary_sample_count_20_genes.js",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/php/d3.php",
-		"/C/Users/sahin/Desktop/Cancer_Database_Website/apps/db_test/static/db_test/js/summary_chart1.js",
-		"/C/Users/sahin/Desktop/Cancer_Database_Website/apps/db_test/models.py",
-		"/C/Users/sahin/Desktop/Cancer_Database_Website/cancer_db/settings.py",
-		"/C/Users/sahin/Desktop/Cancer_Database_Website/apps/db_test/static/db_test/js/all_calculations_query_page.js",
-		"/C/Users/sahin/Desktop/Cancer_Database_Website/apps/db_test/templates/db_test/somatic_result.html",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/php/summary.php",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/js/d3_summary_all_calculations.js",
-		"/C/Users/sahin/Desktop/Cancer_Database_Website/templates/base.html",
-		"/C/Users/sahin/Desktop/Cancer_Database_Website/apps/db_test/templates/db_test/somatic_summary.html",
-		"/E/Website/Worked Html Files/Sushmita Paul Website/Final Design/Complete Website/CBL/cbl.html",
-		"/E/Website/Worked Html Files/Sushmita Paul Website/Final Design/Complete Website/CBL/js/main.js",
-		"/E/Website/Worked Html Files/Sushmita Paul Website/Final Design/Complete Website/teaching.html",
-		"/E/Website/Worked Html Files/Sushmita Paul Website/Final Design/Complete Website/index.html",
-		"/C/Users/sahin/Desktop/Cancer_Database_Website/apps/db_test/templates/db_test/home.html",
-		"/C/Users/sahin/Desktop/New folder/Cancer_Database_Website/cancer_db/urls.py",
-		"/C/Users/sahin/Desktop/New folder/Cancer_Database_Website/cancer_db/settings.py",
-		"/C/Users/sahin/Desktop/New folder/Cancer_Database_Website/cancer_db/settings - Copy.py",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/stackoverflow.html",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/js/d3_summary_sample_count_20_genes.js",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/js/d3_snv_class_stacked_pie.js",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/js/d3_snv_class.js",
-		"/D/Installed Softwares/Xampp/htdocs/cancer-database/index.html",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/js/d3_variant_classification.js",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/js/d3_variant_type.js",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/php/query.php",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/php/cancerdb.php",
-		"/G/Recovered data 11-12-2019 at 15_44_30/NTFS 1/LostFiles2/Thesis (Autosaved).docx",
-		"/D/Temporary Files/Doomsday/Doomsday Clock 01 (of 12) (2017) GetComics.INFO.cbr",
-		"/D/Temporary Files/Websites/Typerite_1_0_0/Typerite_1_0_0/page-joinus.html",
-		"/D/Temporary Files/Websites/Typerite_1_0_0/Typerite_1_0_0/index.html",
-		"/D/Temporary Files/Websites/Typerite_1_0_0/Typerite_1_0_0/page-intervention.html",
-		"/D/Temporary Files/Websites/Typerite_1_0_0/Typerite_1_0_0/page-about.html",
-		"/D/Temporary Files/Websites/Typerite_1_0_0/Typerite_1_0_0/page-gallery.html",
-		"/D/Temporary Files/Websites/Typerite_1_0_0/Typerite_1_0_0/page-contact.html",
-		"/D/Temporary Files/Websites/Typerite_1_0_0/Typerite_1_0_0/css/main.css",
-		"/D/Temporary Files/Websites/Typerite_1_0_0/Typerite_1_0_0/styles.html",
-		"/D/Temporary Files/Websites/Epitome_1_0_0/epitome_1_0_0/css/main.css",
-		"/D/Temporary Files/Websites/Epitome_1_0_0/epitome_1_0_0/index.html",
-		"/D/Temporary Files/Websites/Epitome_1_0_0/epitome_1_0_0/css/base.css",
-		"/D/Temporary Files/Websites/Epitome_1_0_0/epitome_1_0_0/css/vendor.css",
-		"/D/NIBMG/Web-Development Files/TESTING/CodePen_Export_RGOqQY/src/script.js",
-		"/D/Temporary Files/Websites/Epitome_1_0_0/epitome_1_0_0/site.webmanifest",
-		"/D/Temporary Files/d3-key-concepts/d3-key-concepts/09-onelastthing/index.html",
-		"/D/Installed Softwares/Xampp/php/php.ini",
-		"/D/Temporary Files/csvjson-app-master/csvjson-app-master/js/csvjson.min.js",
-		"/D/NIBMG/Web-Development Files/TESTING/CodePen_Export_RGOqQY/dist/script.js",
-		"/D/NIBMG/Web-Development Files/TESTING/CodePen_Export_RGOqQY/dist/index.html",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/go/data.go",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/go/main.go",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/go/pfam.go",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/go/uniprot.go",
-		"/I/d3_summary_all_calculations.js",
-		"/I/all_calculations_query_page.js",
-		"/I/for_summary_page",
-		"/I/for_query_page.html",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/js/d3_summary_total_samples.js",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/js/summary_chart1.js",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/js/all_calculations_query_page.js",
-		"/D/Temporary Files/caged-d3-tip-517b147/index.js",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/stack.html",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/check.html",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/php/d3_2.php",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/php/running_data.php",
-		"/D/Temporary Files/d3-tip-master/d3-tip-master/d3-tip.js",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/data.csv",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/js/app.js",
-		"/D/Temporary Files/Imminent_1_0_0/Imminent_1_0_0/index-particles.html",
-		"/D/Temporary Files/Web-Services.pem",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/js/test.js",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/js/summary_chart.js",
-		"/D/Temporary Files/dataframe-js-develop/dataframe-js-develop/dist/dataframe.js",
-		"/D/Temporary Files/screencasts-gh-pages/screencasts-gh-pages/splittingCharts/examples/code/snapshot11/README.md",
-		"/D/NIBMG/Web-Development Files/TESTING/D3js/js/app.js",
-		"/D/NIBMG/Web-Development Files/TESTING/D3js/d3.html",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/d3/API.md",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/register.html",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/login.html",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/index.html",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/summary.html",
-		"/C/Users/sahin/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/D/Temporary Files/bamCleave",
-		"/D/d/login.php",
-		"/D/d/CodePen_Export_RGOqQY/CodePen_Export_RGOqQY/dist/script.js",
-		"/D/d/muts-needle-plot-v0.4.0/bbglab-muts-needle-plot-ef818c3/index.html",
-		"/D/d/Codes/animate.m",
-		"/D/dOWNLOADS/CodePen_Export_RGOqQY/CodePen_Export_RGOqQY/dist/script.js",
-		"/D/dOWNLOADS/CodePen_Export_RGOqQY/CodePen_Export_RGOqQY/dist/index.html",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/php/test.php",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/php/register.php",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/chart.html",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/js/app1.js",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/test.js",
-		"/D/Installed Softwares/Xampp/htdocs/nibmg-website/d3/d3.js",
-		"/C/Users/sahin/Desktop/Dev/animesh/src/test.py",
-		"/D/htdocd/nibmg-website/php/query.php",
-		"/D/htdocd/nibmg-website/php/login.php"
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/static/funding_theory/js/d3_cactus7.js",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/template/funding_theory/test.html",
+		"/home/icgc/Development/Django_Dev/.gitignore",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/urls.py",
+		"/home/icgc/Development/Django_Dev/all_development/settings.py",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/views.py",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/static/funding_theory/css/styles.css",
+		"/home/icgc/Development/Django_Dev/all_development/urls.py",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/static/funding_theory/js/d3-append-html.js",
+		"/opt/lampp/htdocs/nibmg-website/cactus_data",
+		"/opt/lampp/htdocs/nibmg-website/color_scheme",
+		"/opt/lampp/htdocs/nibmg-website/js/d3_cactus3.js",
+		"/opt/lampp/htdocs/nibmg-website/js/d3_cactus2.js",
+		"/opt/lampp/htdocs/nibmg-website/js/d3_snv_class.js",
+		"/opt/lampp/htdocs/nibmg-website/js/all_calculations_query_page.js",
+		"/opt/lampp/htdocs/nibmg-website/js/d3_variant_classification.js",
+		"/opt/lampp/htdocs/nibmg-website/php/query.php",
+		"/opt/lampp/htdocs/nibmg-website/js/d3_cactus.js",
+		"/opt/lampp/htdocs/nibmg-website/php/data.csv",
+		"/run/media/icgc/UBUNTU 18_0/lollipop_fixed",
+		"/home/icgc/scrapping.py",
+		"/opt/lampp/htdocs/nibmg-website/js/d3_remove.js",
+		"/opt/lampp/htdocs/nibmg-website/js/d3_test2.js",
+		"/opt/lampp/htdocs/nibmg-website/js/d3_test.js",
+		"/opt/lampp/htdocs/nibmg-website/js/d3_snv_class_stacked_pie.js",
+		"/opt/lampp/htdocs/nibmg-website/js/d3_dynamic_creation.js",
+		"/run/media/icgc/UBUNTU 18_0/text",
+		"/run/media/icgc/UBUNTU 18_0/all_calculations_query_page_modified.js",
+		"/opt/lampp/htdocs/nibmg-website/js/d3_lolipop.js",
+		"/run/media/icgc/OIIINK/format.html",
+		"/opt/lampp/htdocs/nibmg-website/d3/CHANGES.md"
 	],
 	"find":
 	{
-		"height": 32.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
@@ -446,45 +484,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"footer",
-			"loader",
-			"preloader",
-			"section",
-			"contact",
-			"column-large",
-			"prelo",
-			"logo",
-			"max_ex",
-			"Sample_id",
-			"Hugo_Symbol",
-			"cDNA_Change",
-			"Genome_Change",
-			"variant_type",
-			"Variant_Type",
-			"Variant_Classification",
-			"js",
-			"data2",
-			"data1",
-			"30",
-			"tip4",
-			"diff_sample",
-			"console",
-			"indigo",
-			"svg4",
-			"data1",
-			"genes_loc",
-			"y_axis",
-			"600",
-			"            var svg = d3.select(\"body\").append(\"svg\")\n                        .attr(\"width\", width).attr(\"height\", height)\n                        .style(\"background\", \"lightblue\")\n                        .append(\"g\")\n                        .attr(\"transform\", \"translate(\" + spacing/2 + \",\" + spacing/2 + \")\");",
-			");\n",
-			"sales",
-			"salesperson",
-			"data",
-			"z",
-			"10",
-			"real",
-			"300",
-			"updates"
+			"50",
+			"45",
+			"common_plot",
+			"db_test",
+			"'",
+			"\"",
+			"38",
+			"z1",
+			" ",
+			"remove",
+			"intron",
+			"tab",
+			">\n",
+			"snp"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -502,82 +515,55 @@
 	"folders":
 	[
 		{
-			"path": "D:\\Development Projects\\Django_Dev"
+			"path": "/home/icgc/Development/Django_Dev"
 		}
 	],
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "apps/funding_theory/template/funding_theory/base.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2892,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1053,
+								1053
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 606.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
 					"file": "apps/funding_theory/template/funding_theory/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6803,
+						"buffer_size": 3617,
 						"regions":
 						{
-							"col_00000001":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										6440,
-										6453
-									],
-									[
-										6515,
-										6528
-									]
-								],
-								"scope": "col_00000001"
-							},
-							"col_00000001_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_00000001_circle.png",
-								"regions":
-								[
-									[
-										6381,
-										6381
-									],
-									[
-										6457,
-										6457
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_ADD8E6FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										5068,
-										5077
-									]
-								],
-								"scope": "col_ADD8E6FF"
-							},
-							"col_ADD8E6FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_ADD8E6FF_circle.png",
-								"regions":
-								[
-									[
-										5031,
-										5031
-									]
-								],
-								"scope": "col_gutter"
-							},
 							"col_C0C0C0FF":
 							{
 								"flags": 16,
@@ -607,28 +593,30 @@
 						"selection":
 						[
 							[
-								567,
-								567
+								3556,
+								3556
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"open_with_edit": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1427.0,
+						"translation.y": 1404.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "apps/funding_theory/static/funding_theory/js/d3_cactus.js",
+					"buffer": 2,
+					"file": "apps/funding_theory/template/funding_theory/test.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 477,
+						"buffer_size": 6307,
 						"regions":
 						{
 							"col_00758FFF":
@@ -637,8 +625,8 @@
 								"regions":
 								[
 									[
-										161,
-										168
+										2611,
+										2618
 									]
 								],
 								"scope": "col_00758FFF"
@@ -650,8 +638,8 @@
 								"regions":
 								[
 									[
-										65,
-										65
+										2568,
+										2568
 									]
 								],
 								"scope": "col_gutter"
@@ -662,8 +650,8 @@
 								"regions":
 								[
 									[
-										106,
-										113
+										2546,
+										2553
 									]
 								],
 								"scope": "col_0F4C81FF"
@@ -675,8 +663,8 @@
 								"regions":
 								[
 									[
-										65,
-										65
+										2502,
+										2502
 									]
 								],
 								"scope": "col_gutter"
@@ -687,8 +675,8 @@
 								"regions":
 								[
 									[
-										227,
-										234
+										2697,
+										2704
 									]
 								],
 								"scope": "col_282D3CFF"
@@ -700,8 +688,8 @@
 								"regions":
 								[
 									[
-										65,
-										65
+										2676,
+										2676
 									]
 								],
 								"scope": "col_gutter"
@@ -712,8 +700,8 @@
 								"regions":
 								[
 									[
-										128,
-										135
+										2578,
+										2585
 									]
 								],
 								"scope": "col_4A5335FF"
@@ -725,8 +713,8 @@
 								"regions":
 								[
 									[
-										65,
-										65
+										2568,
+										2568
 									]
 								],
 								"scope": "col_gutter"
@@ -737,8 +725,8 @@
 								"regions":
 								[
 									[
-										117,
-										124
+										2557,
+										2564
 									]
 								],
 								"scope": "col_55C6A9FF"
@@ -750,8 +738,8 @@
 								"regions":
 								[
 									[
-										65,
-										65
+										2502,
+										2502
 									]
 								],
 								"scope": "col_gutter"
@@ -762,8 +750,8 @@
 								"regions":
 								[
 									[
-										205,
-										212
+										2665,
+										2672
 									]
 								],
 								"scope": "col_6B5876FF"
@@ -775,8 +763,8 @@
 								"regions":
 								[
 									[
-										65,
-										65
+										2622,
+										2622
 									]
 								],
 								"scope": "col_gutter"
@@ -787,8 +775,8 @@
 								"regions":
 								[
 									[
-										139,
-										146
+										2589,
+										2596
 									]
 								],
 								"scope": "col_798EA4FF"
@@ -800,8 +788,8 @@
 								"regions":
 								[
 									[
-										65,
-										65
+										2568,
+										2568
 									]
 								],
 								"scope": "col_gutter"
@@ -812,8 +800,8 @@
 								"regions":
 								[
 									[
-										194,
-										201
+										2654,
+										2661
 									]
 								],
 								"scope": "col_9B4722FF"
@@ -825,8 +813,8 @@
 								"regions":
 								[
 									[
-										65,
-										65
+										2622,
+										2622
 									]
 								],
 								"scope": "col_gutter"
@@ -837,8 +825,8 @@
 								"regions":
 								[
 									[
-										249,
-										256
+										2719,
+										2726
 									]
 								],
 								"scope": "col_A09998FF"
@@ -850,8 +838,8 @@
 								"regions":
 								[
 									[
-										65,
-										65
+										2676,
+										2676
 									]
 								],
 								"scope": "col_gutter"
@@ -862,8 +850,8 @@
 								"regions":
 								[
 									[
-										216,
-										223
+										2686,
+										2693
 									]
 								],
 								"scope": "col_B89B72FF"
@@ -875,8 +863,33 @@
 								"regions":
 								[
 									[
-										65,
-										65
+										2676,
+										2676
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_C0C0C0FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1360,
+										1366
+									]
+								],
+								"scope": "col_C0C0C0FF"
+							},
+							"col_C0C0C0FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_C0C0C0FF_circle.png",
+								"regions":
+								[
+									[
+										1346,
+										1346
 									]
 								],
 								"scope": "col_gutter"
@@ -887,8 +900,8 @@
 								"regions":
 								[
 									[
-										84,
-										91
+										2524,
+										2531
 									]
 								],
 								"scope": "col_CD212AFF"
@@ -900,8 +913,8 @@
 								"regions":
 								[
 									[
-										65,
-										65
+										2502,
+										2502
 									]
 								],
 								"scope": "col_gutter"
@@ -912,8 +925,8 @@
 								"regions":
 								[
 									[
-										183,
-										190
+										2643,
+										2650
 									]
 								],
 								"scope": "col_E8A798FF"
@@ -925,8 +938,8 @@
 								"regions":
 								[
 									[
-										65,
-										65
+										2622,
+										2622
 									]
 								],
 								"scope": "col_gutter"
@@ -937,8 +950,8 @@
 								"regions":
 								[
 									[
-										172,
-										179
+										2632,
+										2639
 									]
 								],
 								"scope": "col_EDD59EFF"
@@ -950,8 +963,8 @@
 								"regions":
 								[
 									[
-										65,
-										65
+										2622,
+										2622
 									]
 								],
 								"scope": "col_gutter"
@@ -962,8 +975,8 @@
 								"regions":
 								[
 									[
-										238,
-										245
+										2708,
+										2715
 									]
 								],
 								"scope": "col_EDF1FEFF"
@@ -975,8 +988,8 @@
 								"regions":
 								[
 									[
-										65,
-										65
+										2676,
+										2676
 									]
 								],
 								"scope": "col_gutter"
@@ -987,8 +1000,8 @@
 								"regions":
 								[
 									[
-										150,
-										157
+										2600,
+										2607
 									]
 								],
 								"scope": "col_FA7A35FF"
@@ -1000,8 +1013,8 @@
 								"regions":
 								[
 									[
-										65,
-										65
+										2568,
+										2568
 									]
 								],
 								"scope": "col_gutter"
@@ -1012,8 +1025,8 @@
 								"regions":
 								[
 									[
-										95,
-										102
+										2535,
+										2542
 									]
 								],
 								"scope": "col_FFA500FF"
@@ -1025,8 +1038,8 @@
 								"regions":
 								[
 									[
-										65,
-										65
+										2502,
+										2502
 									]
 								],
 								"scope": "col_gutter"
@@ -1035,41 +1048,79 @@
 						"selection":
 						[
 							[
-								477,
-								477
+								1390,
+								1390
 							]
 						],
 						"settings":
 						{
-							"open_with_edit": true,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1026.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "apps/funding_theory/static/funding_theory/js/d3_test.js",
-					"semi_transient": true,
+					"buffer": 3,
+					"file": "apps/funding_theory/static/funding_theory/js/d3_cactus.js",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1187,
+						"buffer_size": 12797,
 						"regions":
 						{
+							"col_00000001":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										12429,
+										12442
+									]
+								],
+								"scope": "col_00000001"
+							},
+							"col_00000001_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_00000001_circle.png",
+								"regions":
+								[
+									[
+										12382,
+										12382
+									]
+								],
+								"scope": "col_gutter"
+							},
 							"col_000000FF":
 							{
 								"flags": 16,
 								"regions":
 								[
 									[
-										915,
-										920
+										7319,
+										7324
+									],
+									[
+										8172,
+										8177
+									],
+									[
+										9077,
+										9082
+									],
+									[
+										9951,
+										9956
+									],
+									[
+										10411,
+										10416
 									]
 								],
 								"scope": "col_000000FF"
@@ -1081,58 +1132,449 @@
 								"regions":
 								[
 									[
-										895,
-										895
+										7292,
+										7292
+									],
+									[
+										8136,
+										8136
+									],
+									[
+										9042,
+										9042
+									],
+									[
+										9909,
+										9909
+									],
+									[
+										10376,
+										10376
 									]
 								],
 								"scope": "col_gutter"
 							},
-							"col_0000FFFF":
+							"col_00758FFF":
 							{
 								"flags": 16,
 								"regions":
 								[
 									[
-										1043,
-										1047
+										2129,
+										2136
 									]
 								],
-								"scope": "col_0000FFFF"
+								"scope": "col_00758FFF"
 							},
-							"col_0000FFFF_icon":
+							"col_00758FFF_icon":
 							{
 								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_0000FFFF_circle.png",
+								"icon": "Packages/User/Color Highlight.cache/col_00758FFF_circle.png",
 								"regions":
 								[
 									[
-										1025,
-										1025
+										2087,
+										2087
 									]
 								],
 								"scope": "col_gutter"
 							},
-							"col_ADD8E6FF":
+							"col_008000FF":
 							{
 								"flags": 16,
 								"regions":
 								[
 									[
-										424,
-										433
+										7754,
+										7759
 									]
 								],
-								"scope": "col_ADD8E6FF"
+								"scope": "col_008000FF"
 							},
-							"col_ADD8E6FF_icon":
+							"col_008000FF_icon":
 							{
 								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_ADD8E6FF_circle.png",
+								"icon": "Packages/User/Color Highlight.cache/col_008000FF_circle.png",
 								"regions":
 								[
 									[
-										390,
-										390
+										7718,
+										7718
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_0F4C81FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2065,
+										2072
+									]
+								],
+								"scope": "col_0F4C81FF"
+							},
+							"col_0F4C81FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_0F4C81FF_circle.png",
+								"regions":
+								[
+									[
+										2022,
+										2022
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_282D3CFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2213,
+										2220
+									]
+								],
+								"scope": "col_282D3CFF"
+							},
+							"col_282D3CFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_282D3CFF_circle.png",
+								"regions":
+								[
+									[
+										2193,
+										2193
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_4A5335FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2096,
+										2103
+									]
+								],
+								"scope": "col_4A5335FF"
+							},
+							"col_4A5335FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_4A5335FF_circle.png",
+								"regions":
+								[
+									[
+										2087,
+										2087
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_55C6A9FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2076,
+										2083
+									]
+								],
+								"scope": "col_55C6A9FF"
+							},
+							"col_55C6A9FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_55C6A9FF_circle.png",
+								"regions":
+								[
+									[
+										2022,
+										2022
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_6B5876FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2182,
+										2189
+									]
+								],
+								"scope": "col_6B5876FF"
+							},
+							"col_6B5876FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_6B5876FF_circle.png",
+								"regions":
+								[
+									[
+										2140,
+										2140
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_798EA4FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2107,
+										2114
+									]
+								],
+								"scope": "col_798EA4FF"
+							},
+							"col_798EA4FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_798EA4FF_circle.png",
+								"regions":
+								[
+									[
+										2087,
+										2087
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_808080FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										5413,
+										5417
+									]
+								],
+								"scope": "col_808080FF"
+							},
+							"col_808080FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_808080FF_circle.png",
+								"regions":
+								[
+									[
+										5375,
+										5375
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_9B4722FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2171,
+										2178
+									]
+								],
+								"scope": "col_9B4722FF"
+							},
+							"col_9B4722FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_9B4722FF_circle.png",
+								"regions":
+								[
+									[
+										2140,
+										2140
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_A09998FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2235,
+										2242
+									]
+								],
+								"scope": "col_A09998FF"
+							},
+							"col_A09998FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_A09998FF_circle.png",
+								"regions":
+								[
+									[
+										2193,
+										2193
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_B89B72FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2202,
+										2209
+									]
+								],
+								"scope": "col_B89B72FF"
+							},
+							"col_B89B72FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_B89B72FF_circle.png",
+								"regions":
+								[
+									[
+										2193,
+										2193
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_CD212AFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2043,
+										2050
+									]
+								],
+								"scope": "col_CD212AFF"
+							},
+							"col_CD212AFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_CD212AFF_circle.png",
+								"regions":
+								[
+									[
+										2022,
+										2022
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_E8A798FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2160,
+										2167
+									]
+								],
+								"scope": "col_E8A798FF"
+							},
+							"col_E8A798FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_E8A798FF_circle.png",
+								"regions":
+								[
+									[
+										2140,
+										2140
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_EDD59EFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2149,
+										2156
+									]
+								],
+								"scope": "col_EDD59EFF"
+							},
+							"col_EDD59EFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_EDD59EFF_circle.png",
+								"regions":
+								[
+									[
+										2140,
+										2140
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_EDF1FEFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2224,
+										2231
+									]
+								],
+								"scope": "col_EDF1FEFF"
+							},
+							"col_EDF1FEFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_EDF1FEFF_circle.png",
+								"regions":
+								[
+									[
+										2193,
+										2193
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FA7A35FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2118,
+										2125
+									]
+								],
+								"scope": "col_FA7A35FF"
+							},
+							"col_FA7A35FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FA7A35FF_circle.png",
+								"regions":
+								[
+									[
+										2087,
+										2087
 									]
 								],
 								"scope": "col_gutter"
@@ -1143,8 +1585,8 @@
 								"regions":
 								[
 									[
-										651,
-										654
+										8603,
+										8606
 									]
 								],
 								"scope": "col_FF0000FF"
@@ -1156,8 +1598,58 @@
 								"regions":
 								[
 									[
-										633,
-										633
+										8568,
+										8568
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FFA500FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2054,
+										2061
+									]
+								],
+								"scope": "col_FFA500FF"
+							},
+							"col_FFA500FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FFA500FF_circle.png",
+								"regions":
+								[
+									[
+										2022,
+										2022
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FFFF00FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										9538,
+										9544
+									]
+								],
+								"scope": "col_FFFF00FF"
+							},
+							"col_FFFF00FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FFFF00FF_circle.png",
+								"regions":
+								[
+									[
+										9502,
+										9502
 									]
 								],
 								"scope": "col_gutter"
@@ -1166,18 +1658,16 @@
 						"selection":
 						[
 							[
-								57,
-								57
+								2022,
+								2022
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 57.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1188,11 +1678,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 32.0
+		"height": 28.0
 	},
 	"input":
 	{
-		"height": 45.0
+		"height": 43.0
 	},
 	"layout":
 	{
@@ -1223,13 +1713,13 @@
 	},
 	"output.unsaved_changes":
 	{
-		"height": 154.0
+		"height": 97.0
 	},
 	"pinned_build_system": "",
 	"project": "",
 	"replace":
 	{
-		"height": 60.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1249,7 +1739,7 @@
 		[
 			[
 				"",
-				"D:\\Installed Softwares\\Xampp\\htdocs\\nibmg-website\\sublime_workspace.sublime-project"
+				"/opt/lampp/htdocs/cancer-database/cancer-database.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -1271,7 +1761,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 306.0,
+	"side_bar_width": 301.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
