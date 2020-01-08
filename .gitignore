@@ -1,2 +1,3 @@
 virtual_env/
 development.sublime-workspace
+db.sqlite3
