@@ -123,6 +123,7 @@ var svg = d3.select(`#graph_2`).append("svg")
             .attr("preserveAspectRatio", "xMinYMin meet")
             .attr("viewBox", `0 0 ${InnerWidth + Margin.left + Margin.right} ${InnerHeight + Margin.top + Margin.bottom}`)
             .style("background","lightblue")
+            .attr("id", "test_download")
             .append("g")
             .attr("transform", "translate(" + Margin.left + "," + Margin.top + ")");
 
