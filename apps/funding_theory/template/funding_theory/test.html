@@ -1,16 +1,6 @@
 {% extends 'funding_theory/base.html' %}
 
 {% block content %}
-<script type="text/javascript">
-	tinymce.init({
-		selector	: '.tinymce_textarea',
-		branding	: false,
-		theme		: 'silver',
-		menubar		: false,
-		statusbar	: false, 
-		height		: '400',
-	});
-</script>
 
 <section class="section">
   <div class="container">
@@ -19,11 +9,13 @@
   			<div class="columns">
   				<div class="column">
   				  	<p class="level-item has-text-centered"> Add Cactus Data Here </p> 
-  					<textarea class="tinymce_textarea" id="text_1"></textarea> 
+  					<textarea class="tinymce_textarea" id="text_1">					
+  					</textarea> 
   				</div>
   				<div class="column"> 
   					<p class="level-item has-text-centered"> Add Cactus Meta Here </p>
-  					<textarea class="tinymce_textarea" id="text_2"></textarea> 
+  					<textarea class="tinymce_textarea" id="text_2">
+  					</textarea> 
   				</div>
   			</div>
   				<br>
@@ -34,19 +26,32 @@
 </section>
 
 <section class="section">
-	<div class="container" id="for_grid_svg">
+	<div class="container">
+		<div class="tags is-centered are-medium" id="for_label"></div>
 	</div>
+
+	<div class="container" id="for_grid_svg"></div>
 </section>
 
 <section class="section">
-	<div class="container" id="for_grid_button">
-	</div>
+	<div class="container" id="for_grid_button"></div>
 </section>
 
 {% load static %}
 
 <!-- <script type="text/javascript" src="{% static 'funding_theory/js/d3_cactus7.js' %}"></script> -->
 <script type="text/javascript" src="{% static 'funding_theory/js/d3_cactus.js' %}"></script>
+
+<script type="text/javascript">	
+			tinymce.init({
+				selector	: '.tinymce_textarea',
+				branding	: false,
+				theme		: 'silver',
+				menubar		: false,
+				statusbar	: false, 
+				height		: '400',
+			});
+</script>
 
 <script type="text/javascript">
 	$(document).ready(function(){
@@ -65,11 +70,16 @@
 			var min_line_height = _.min(_.concat(_.map(data_json2,d=>d.common), _.map(data_json2,d=>d.only_tumor), _.map(data_json2,d=>d.only_lk)));
 			var max_line_height = _.max(_.concat(_.map(data_json2,d=>d.common), _.map(data_json2,d=>d.only_tumor), _.map(data_json2,d=>d.only_lk)));
 			var uniq_genes = _.uniq(_.map(data_json1, d=>d.gene));
+			var color_set = [ '#CD212A', '#FFA500', '#0F4C81', '#55C6A9', 
+							  '#4A5335', '#798EA4', '#FA7A35', '#00758F', 
+							  '#EDD59E', '#E8A798', '#9B4722', '#6B5876', 
+							  '#B89B72', '#282D3C', '#EDF1FE', '#A09998'];			
 			var cactus_data = new Array();
 			var cactus_meta = new Array();
 			var max_value = new Array();
 			var max = 0;
 
+			generate_tags(uniq_genes, color_set);
 			generate_grid_svg(uniq_patients.length, uniq_patients);
 			generate_grid_button(uniq_patients.length, uniq_patients);
 
@@ -94,6 +104,17 @@
 		});
 
 	});
+</script>
+
+<script type="text/javascript">
+	function generate_tags(uniq_genes, color_set){
+
+		for(i=0;i<uniq_genes.length;i++){
+					d3.select(`#for_label`).appendHTML(`
+						<span class="tag has-text-white" style="background-color: ${color_set[i]}">${uniq_genes[i]}</span>
+						`);
+				}
+			}
 </script>
 
 <script type="text/javascript">
