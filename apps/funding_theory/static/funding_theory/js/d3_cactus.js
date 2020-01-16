@@ -1,4 +1,4 @@
-function cactus_plot(cactus_data, cactus_meta, all_genes, max_angle, min_angle, max_line, min_line, max_height)	
+function cactus_plot(cactus_data, cactus_meta, all_genes, max_angle, min_angle, max_line, min_line, max_height, color_set)
 	{// Function arguments will include the following:
 		// cactus_data, cactus_meta, all_genes, max(angle, height(for  lines), min(height(for  lines))), 
 	
@@ -42,16 +42,21 @@ function cactus_plot(cactus_data, cactus_meta, all_genes, max_angle, min_angle, 
 		function translate_circle_common(){
 		  $(`#circle_common_${patient_name}`).css({
 		    'transform-origin':`${x_uniq(uniq_key[1])}px ${InnerHeight - common_plot_height - line_height_scale(cactus_meta.common)}px`,
-		    'transform': `translate(${x_uniq(uniq_key[1])}px, ${InnerHeight - common_plot_height - 2}px)`
+		    'transform': `translate(${x_uniq(uniq_key[1])}px, ${InnerHeight - common_plot_height}px)`
 		  });
 		};		
 	
 		// All Calculations ------------------------------------------=>
-		var color_set = [ '#CD212A', '#FFA500', '#0F4C81', '#55C6A9', 
-						  '#4A5335', '#798EA4', '#FA7A35', '#00758F', 
-						  '#EDD59E', '#E8A798', '#9B4722', '#6B5876', 
-						  '#B89B72', '#282D3C', '#EDF1FE', '#A09998'];
-	
+		// cactus_data = _.sortBy(cactus_data, 'VAF');
+		// var color_set = [ '#ff7f00', '#4daf4a', '#8dd3c7', '#C2FFED', 
+		// 				  '#377eb8', '#bebada', '#fb9a99', '#282D3C', 
+		// 				  '#e41a1c', '#C2FFED', '#fccde5', '#984ea3', 
+		// 				  '#ccebc5', '#80b1d3', '#EDF1FE', '#A09998'];
+		// console.log(color_set[`${new_gene_name[0]}`]);
+		var gene_name = _.uniq(_.map(cactus_data , d=>d.gene));
+		var new_gene_name = _.concat(gene_name, _.difference(all_genes, gene_name));
+		console.log(color_set);
+		// var new_gene_name = all_genes;
 		var patient_name = cactus_meta.pat;
 		var uniq_key = _.sortBy(_.uniq(_.map(cactus_data,d=>d.type)));
 		if(uniq_key.length<2){
@@ -77,9 +82,9 @@ function cactus_plot(cactus_data, cactus_meta, all_genes, max_angle, min_angle, 
 		  common_data_stack[i] = _.map(common_data,d=>d.type===uniq_key[i]?({[d.gene]:d.VAF}):'').filter(String);
 		  common_data_stack[i] = _.assign(...common_data_stack[i]);
 	
-		for(var j=0;j<all_genes.length;j++){
-		  if(typeof common_data_stack[i][all_genes[j]] === 'undefined'){
-		    common_data_stack[i][all_genes[j]]=0;
+		for(var j=0;j<new_gene_name.length;j++){
+		  if(typeof common_data_stack[i][new_gene_name[j]] === 'undefined'){
+		    common_data_stack[i][new_gene_name[j]]=0;
 		  }
 		}
 	
@@ -88,13 +93,13 @@ function cactus_plot(cactus_data, cactus_meta, all_genes, max_angle, min_angle, 
 		uniq_tumor_stack = _.assign(..._.map(uniq_tumor_data,d=>({[d.gene]:d.VAF})));
 		uniq_lk_stack = _.assign(..._.map(uniq_lk_data,d=>({[d.gene]:d.VAF})));
 	
-		for(var j=0;j<all_genes.length;j++){
-		  if(typeof uniq_tumor_stack[all_genes[j]] === 'undefined'){
-		    uniq_tumor_stack[all_genes[j]]=0;
+		for(var j=0;j<new_gene_name.length;j++){
+		  if(typeof uniq_tumor_stack[new_gene_name[j]] === 'undefined'){
+		    uniq_tumor_stack[new_gene_name[j]]=0;
 		  }
 	
-		  if(typeof uniq_lk_stack[all_genes[j]] === 'undefined'){
-		    uniq_lk_stack[all_genes[j]]=0;
+		  if(typeof uniq_lk_stack[new_gene_name[j]] === 'undefined'){
+		    uniq_lk_stack[new_gene_name[j]]=0;
 		  }
 		}
 	
@@ -102,7 +107,7 @@ function cactus_plot(cactus_data, cactus_meta, all_genes, max_angle, min_angle, 
 		var Margin = {top: 40, right: 20, bottom: 40, left: 60};
 		var InnerWidth = 432 - Margin.left - Margin.right;
 		var InnerHeight = 432 - Margin.top - Margin.bottom;
-		var stack = d3.stack().keys(all_genes);
+		var stack = d3.stack().keys(new_gene_name);
 			// All Stacking here
 		var common_d3_stack = stack(common_data_stack);
 		var uniq_tumor_d3_stack = stack([uniq_tumor_stack]);
@@ -117,7 +122,7 @@ function cactus_plot(cactus_data, cactus_meta, all_genes, max_angle, min_angle, 
 		               .range([InnerHeight,0]);
 	
 		var y_axis_uniq = d3.scaleLinear()
-		                    .domain([0, 6+0.3])
+		                    .domain([0, 6 + 0.3])
 		                    .rangeRound([0,InnerHeight]);
 	
 		var angle_scale = d3.scaleLinear()
@@ -126,7 +131,7 @@ function cactus_plot(cactus_data, cactus_meta, all_genes, max_angle, min_angle, 
 	
 		var line_height_scale = d3.scaleLinear()
 								  .domain([min_line, max_line])
-								  .range([20,150]);
+								  .range([30,150]);
 	
 	
 		var svg = d3.select(`#patient_${patient_name}`).append("svg")
@@ -142,7 +147,7 @@ function cactus_plot(cactus_data, cactus_meta, all_genes, max_angle, min_angle, 
 			
 		var common_plot = group1.selectAll("g").data(common_d3_stack)
 		                        .enter().append("g")
-		                        .style("fill", (d,i)=>color_set[i]);
+		                        .style("fill", (d,i)=>color_set[`${new_gene_name[i]}`]);
 	
 			         common_plot.selectAll("rect").data(function(d){return d;})
 			                    .enter().append("rect")
@@ -178,7 +183,7 @@ function cactus_plot(cactus_data, cactus_meta, all_genes, max_angle, min_angle, 
 		               		 .attr('y1',InnerHeight - common_plot_height)
 		               		 .attr('x2',x_uniq(uniq_key[1]))
 		               		 .attr('y2',InnerHeight - common_plot_height - line_height_scale(cactus_meta.common))
-		               		 .attr('stroke','green')
+		               		 .attr('stroke','#FFea00')
 		               		 .attr('stroke-width',4);
 
 		var arc = d3.arc();
@@ -197,7 +202,7 @@ function cactus_plot(cactus_data, cactus_meta, all_genes, max_angle, min_angle, 
 		               	 .attr('y1',InnerHeight - common_plot_height - line_height_scale(cactus_meta.common))
 		               	 .attr('x2',x_uniq(uniq_key[1]))
 		               	 .attr('y2',InnerHeight - common_plot_height - line_height_scale(cactus_meta.common) - line_height_scale(cactus_meta.only_lk))
-		               	 .attr('stroke','red')
+		               	 .attr('stroke','#A4E804')
 		               	 .attr('stroke-width',4)
 		               	 .attr('id',`${patient_name}_lk`);
 
@@ -213,7 +218,7 @@ function cactus_plot(cactus_data, cactus_meta, all_genes, max_angle, min_angle, 
 		               	 	.attr('y1',InnerHeight - common_plot_height - line_height_scale(cactus_meta.common))
 		               	 	.attr('x2',x_uniq(uniq_key[1]))
 		               	 	.attr('y2',InnerHeight - common_plot_height - line_height_scale(cactus_meta.common) - line_height_scale(cactus_meta.only_tumor))
-		               	 	.attr('stroke','yellow')
+		               	 	.attr('stroke','#F277C6')
 		               	 	.attr('stroke-width',4)
 		               	 	.attr('id',`${patient_name}_tumor`);
 
@@ -237,7 +242,7 @@ function cactus_plot(cactus_data, cactus_meta, all_genes, max_angle, min_angle, 
 	
 		var uniq_lk_plot = group2.selectAll("g").data(uniq_lk_d3_stack)
 		                         .enter().append("g")
-		                         .style("fill", (d,i)=>color_set[i]);
+		                         .style("fill", (d,i)=>color_set[`${new_gene_name[i]}`]);
 	
 		             uniq_lk_plot.selectAll("rect").data(function(d){return d;})
 		                         .enter().append("rect")
@@ -251,7 +256,7 @@ function cactus_plot(cactus_data, cactus_meta, all_genes, max_angle, min_angle, 
 	
 		var uniq_tumor_plot = group3.selectAll("g").data(uniq_tumor_d3_stack)
 		                            .enter().append("g")
-		                            .style("fill", (d,i)=>color_set[i]);
+		                            .style("fill", (d,i)=>color_set[`${new_gene_name[i]}`]);
 	
 		             uniq_tumor_plot.selectAll("rect").data(function(d){return d;})
 		                            .enter().append("rect")
