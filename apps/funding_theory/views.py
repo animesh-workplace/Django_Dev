@@ -5,5 +5,5 @@ from django.http import HttpResponse
 def index_view(request, *args, **kwargs):
 	return render(request, "funding_theory/index.html", {})
 
-def test_view(request, *args, **kwargs):
-	return render(request, "funding_theory/test.html", {})
+def cactus_plot_view(request, *args, **kwargs):
+	return render(request, "funding_theory/cactus_plot.html", {})

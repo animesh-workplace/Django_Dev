@@ -1,102 +1,56 @@
 {% extends 'funding_theory/base.html' %}
 
 {% block content %}
-<script type="text/javascript">
-	tinymce.init({
-		selector	: '.tinymce_textarea',
-		branding	: false,
-		theme		: 'silver',
-		menubar		: false,
-		statusbar	: false, 
-		height		: '400',
-	});
-</script>
 
 <section class="section">
-  <div class="container">
-
-  		<form method="post" id="tinymce_form"> {% csrf_token %}
-  			<div class="columns">
-  				<div class="column"> <textarea class="tinymce_textarea" id="text_1"></textarea> </div>
-  				<div class="column"> <textarea class="tinymce_textarea" id="text_2"></textarea> </div>
-  			</div>
-  				<br>
-  				<button class="button is-primary is-rounded is-fullwidth" type="submit">Submit</button>
-  		</form>
-
-  </div>    
-</section>
-
-<section class="section">
-	<div class="container" id="for_grid">
+	<div class="container">
+		<h1 class="title"> Welcome to Funding Theory</h1>
+		<h1 class="subtitle">Enjoy the service provided</h1>
 	</div>
 </section>
 
-<script type="text/javascript">
-	$(document).ready(function(){
+<section class="section">
+	<div class="container">
 
-		$('#tinymce_form').submit(function(e){
+		<div class="tile is-ancestor">
 
-			var content1 = tinyMCE.get('text_1').getContent();
-			var content2 = tinyMCE.get('text_2').getContent();
-			var data1 = content1.split('<p>').join('').split('</p>').join('').split('&nbsp;').join('');
-			var data_json1 = CSVJSON.csv2json(data,{parseNumbers: true});
-			var data2 = content2.split('<p>').join('').split('</p>').join('').split('&nbsp;').join('');
-			var data_json2 = CSVJSON.csv2json(data,{parseNumbers: true});
-			var uniq_patients =  _.uniq(_.map(data_json2,d=>d.pat));
-			var min_angle = _.min(_.map(data_json2, d=>d.angle));
-			var max_angle = _.max(_.map(data_json2, d=>d.angle));
-			var min_line_height = _.min(_.map(data_json2, d=>d.common), _.map(data_json2, d=>d.only_lk), _.map(data_json2, d=>d.only_tumor));
-			var max_line_height = _.max(_.map(data_json2, d=>d.common), _.map(data_json2, d=>d.only_lk), _.map(data_json2, d=>d.only_tumor));
-			var uniq_genes = _.uniq(_.map(data_json,d=>d.gene));
-			var cactus_data = new Array();
-			var cactus_meta = new Array();
-			var max_value = new Array();
-			var max = 0;
+			<div class="tile is-parent">
+				<a class="tile is-child box notification is-primary" href="#">
+					<p class="subtitle"> 
+						CSV to JSON 
+					</p>
+				</a>
+			</div>
 
-			generate_grid(uniq_patients.length, uniq_patients);
+			<div class="tile is-parent ">
+				<a class="tile is-child box notification is-link" href="cactus_plot">
+					<p class="subtitle"> 
+						Cactus Plot
+					</p>
+				</a>
+			</div>
 
-			for(i=0;i<uniq_patients.length;i++){
-				var index1 = _.map(data_json1, (d,e)=>d.pat==uniq_patients[i]?e:'').filter(String);
-				var index2 = _.map(data_json2, (d,e)=>d.pat==uniq_patients[i]?e:'').filter(String);
-				cactus_data[i] = _.map(index1,d=>data_json1[d]);
-				cactus_meta[i] = _.map(index2,d=>data_json2[d]);
-				max_value[i] = _.sum(_.map(cactus_data[i],d=>d.VAF));
-			}
-			max = _.max(max_value);
-			// console.log(max_value);
-
-			// $('#data_container').html(JSON.stringify(data_json));
-			// for(aa=0;aa<uniq_patients.length;aa++){
-			// 	generate_plot(aa+1,grouped_data[aa],max);
-			// }
-			return false;
-		});
-
-	});
-</script>
-
-<script type="text/javascript">
-	function generate_grid(length, patient){
-		var loop = _.ceil(length/5);
-		for(i=0;i<loop;i++){
-			d3.select('#for_grid').appendHTML(`
-				<div class="columns">
-					<div class="column"> <div class="has-text-centered" id="patient_${i*5+1}">Patient_ID: ${patient[i*5+0]}</div> </div>
-					<div class="column"> <div class="has-text-centered" id="patient_${i*5+2}">Patient_ID: ${patient[i*5+1]}</div> </div>
-					<div class="column"> <div class="has-text-centered" id="patient_${i*5+3}">Patient_ID: ${patient[i*5+2]}</div> </div>
-					<div class="column"> <div class="has-text-centered" id="patient_${i*5+4}">Patient_ID: ${patient[i*5+3]}</div> </div>
-					<div class="column"> <div class="has-text-centered" id="patient_${i*5+5}">Patient_ID: ${patient[i*5+4]}</div> </div>
+			<div class="tile is-vertical">
+				<div class="tile is-parent ">
+					<a class="tile is-child box notification is-success" href="#">
+						<p class="subtitle"> 
+							Coming Soon 
+						</p>
+					</a>
 				</div>
-				`);
-		}
 
-		for(i=1;i<=(4*loop);i++){
-			if(i>length){
-				$(`#patient_${i}`).hide();
-			}
-		}
-	}
-</script>
+				<div class="tile is-parent ">
+					<a class="tile is-child box notification is-danger" href="#">
+						<p class="subtitle"> 
+							Coming Soon
+						</p>
+					</a>
+				</div>
 
+			</div>
+
+		</div>
+
+	</div>
+</section>
 {% endblock %}
