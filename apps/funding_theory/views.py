@@ -7,3 +7,6 @@ def index_view(request, *args, **kwargs):
 
 def cactus_plot_view(request, *args, **kwargs):
 	return render(request, "funding_theory/cactus_plot.html", {})
+
+def csv2json_view(request, *args, **kwargs):
+	return render(request, "funding_theory/csv2json.html", {})

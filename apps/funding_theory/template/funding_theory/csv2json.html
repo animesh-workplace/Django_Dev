@@ -1,0 +1,53 @@
+{% extends 'funding_theory/base.html' %}
+
+{% block content %}
+<script type="text/javascript">
+	tinymce.init({
+		selector	: '.tinymce_textarea',
+		branding	: false,
+		theme		: 'silver',
+		menubar		: false,
+		statusbar	: false, 
+		height		: '400',
+	});
+</script>
+
+<section class="section">
+  <div class="container">
+
+  		<form method="post" id="tinymce_form"> {% csrf_token %}
+  			<div class="columns">
+  				<div class="column"> <textarea class="tinymce_textarea" id="text"></textarea> </div>
+  				<div class="column"> 
+  					<pre></pre>
+  				</div>
+  			</div>
+  				<br>
+  				<button class="button is-primary is-rounded is-fullwidth" type="submit">Submit</button>
+  		</form>
+
+  </div>    
+</section>
+
+<section class="section">
+	<div class="container" id="for_grid">
+	</div>
+</section>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('#tinymce_form').submit(function(e){
+
+			var content = tinyMCE.get('text').getContent();
+			var data = content.split('<p>').join('').split('</p>').join('').split('&nbsp;').join('');
+			var data_json = CSVJSON.csv2json(data,{parseNumbers: true});
+			$('pre').html(JSON.stringify(data_json, undefined, 4));
+
+			return false;
+		});
+
+	});
+</script>
+
+{% endblock %}
