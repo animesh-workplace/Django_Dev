@@ -1,4 +1,5 @@
 from __future__ import absolute_import, unicode_literals
+import subprocess
 import random
 from celery.decorators import task
 
@@ -15,3 +16,6 @@ def mul(x, y):
 def xsum(numbers):
 	return sum(numbers)
 
+@task(name="find files")
+def all_ls():
+	return subprocess.run('snakemake')
