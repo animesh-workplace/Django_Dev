@@ -47,16 +47,8 @@ function cactus_plot(cactus_data, cactus_meta, all_genes, max_angle, min_angle, 
 		};		
 	
 		// All Calculations ------------------------------------------=>
-		// cactus_data = _.sortBy(cactus_data, 'VAF');
-		// var color_set = [ '#ff7f00', '#4daf4a', '#8dd3c7', '#C2FFED', 
-		// 				  '#377eb8', '#bebada', '#fb9a99', '#282D3C', 
-		// 				  '#e41a1c', '#C2FFED', '#fccde5', '#984ea3', 
-		// 				  '#ccebc5', '#80b1d3', '#EDF1FE', '#A09998'];
-		// console.log(color_set[`${new_gene_name[0]}`]);
 		var gene_name = _.uniq(_.map(cactus_data , d=>d.gene));
 		var new_gene_name = _.concat(gene_name, _.difference(all_genes, gene_name));
-		console.log(color_set);
-		// var new_gene_name = all_genes;
 		var patient_name = cactus_meta.pat;
 		var uniq_key = _.sortBy(_.uniq(_.map(cactus_data,d=>d.type)));
 		if(uniq_key.length<2){
@@ -138,7 +130,6 @@ function cactus_plot(cactus_data, cactus_meta, all_genes, max_angle, min_angle, 
 		            .attr("preserveAspectRatio", "xMinYMin meet")
 		            .attr("viewBox", `0 0 ${InnerWidth + Margin.left + Margin.right} ${InnerHeight + Margin.top + Margin.bottom}`)
 		            .attr('id',`svg_download_${patient_name}`)
-		            // .style("background","grey")
 		            .append("g")
 		            .attr("transform", "translate(" + Margin.left + "," + Margin.top + ")");
 
@@ -263,13 +254,13 @@ function cactus_plot(cactus_data, cactus_meta, all_genes, max_angle, min_angle, 
 		                            .attr("height",function(d){return y_uniq(d[0]) - y_uniq(d[1]);})
 		                            .attr("x", function(d,i){return x_uniq(uniq_key[1]) - (y_axis_uniq(1)/2);})
 		                            .attr("y", function(d){return y_uniq(d[1]) - common_plot_height - line_height_scale(cactus_meta.common) - line_height_scale(cactus_meta.only_tumor);})	                            
-		                            .attr("width", y_axis_uniq(1))
+		                            .attr("width", y_axis_uniq(1));
 	
 		svg.append("g").attr('transform', `translate(0, ${InnerHeight})`)
 		                .style("font", "15px sans").call(d3.axisBottom(x_uniq)
 		                                                   .tickFormat(function(d,i){if(i==2||i==3){ return _.toUpper(d); }}));
 
-		svg.selectAll(".tick  line").attr("stroke", "rgba(0,0,0,0)");      
+		svg.selectAll(`#patient_${patient_name} .tick  line`).attr("stroke", (d,i)=>(i==2||i==3)?"rgba(0,0,0,1)":"rgba(0,0,0,0)");      
 	
 		var rotation_angle = angle_scale(cactus_meta.angle)/2;
 			rotate_line(_.toLower(uniq_key[0]),-rotation_angle);
