@@ -74,11 +74,13 @@
 			var max_line_height = _.max(_.concat(_.map(data_json2,d=>d.common), _.map(data_json2,d=>d.only_tumor), _.map(data_json2,d=>d.only_lk)));
 			var uniq_genes = _.uniq(_.map(data_json1, d=>d.gene));
 			var color_set = {
-				CASP8:'#ff7f00', NOTCH1:'#4daf4a', FAT1:'#8dd3c7', TGFBR2:'#00A6AA', 
-				CDKN2A:'#377eb8', PIK3CA:'#bebada', EPHA2:'#fb9a99', HRAS:'#922329', 
-				TP53:'#e41a1c', KMT2B:'#6367A9', 'HLA-B':'#fccde5', FBXW7:'#984ea3', 
-				ARID2:'#ccebc5'
+				CASP8:'#F9F871', NOTCH1:'#6F91D7', FAT1:'#A9DDC5', TGFBR2:'#96DDE7', 
+				CDKN2A:'#F88F6F', PIK3CA:'#bebada', EPHA2:'#fb9a99', HRAS:'#FFC6A3', 
+				TP53:'#DE407B', KMT2B:'#999AE1', 'HLA-B':'#fccde5', FBXW7:'#984ea3', 
+				ARID2:'#659B91'
 			};	
+
+			//#6F91D7
 			var cactus_data = new Array();
 			var cactus_meta = new Array();
 			var max_value = new Array();
@@ -112,7 +114,7 @@
 
 		for(i=0;i<uniq_genes.length;i++){
 					d3.select(`#for_label`).appendHTML(`
-						<span class="tag has-text-white" style="background-color: ${color_set[uniq_genes[i]]}">${uniq_genes[i]}</span>
+						<span class="tag has-text-dark" style="background-color: ${color_set[uniq_genes[i]]}">${uniq_genes[i]}</span>
 						`);
 				}
 			}

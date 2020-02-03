@@ -154,7 +154,7 @@ function cactus_plot(cactus_data, cactus_meta, all_genes, max_angle, min_angle, 
 			                    .attr("height",function(d){return y_uniq(d[0]) - y_uniq(d[1]);})
 			                    .attr("x", function(d,i){return x_uniq(uniq_key[i]);})
 			                    .attr("y", function(d){return y_uniq(d[1]);})
-			                    .attr("width", y_axis_uniq(1))
+			                    .attr("width", y_axis_uniq(1))			                    
 			                    .attr("class", function(d,i) {return `${patient_name}_${all_genes[_.intersection(_.map(_.map(common_d3_stack,a=>a[i][1]),(a,b)=>a===d[1]?b:''),_.map(_.map(common_d3_stack,a=>a[i][0]),(a,b)=>a===d[0]?b:'')).filter(String)]}_${i}`});
 	
 		for(i=0;i<all_genes.length;i++){
@@ -262,7 +262,7 @@ function cactus_plot(cactus_data, cactus_meta, all_genes, max_angle, min_angle, 
 		                            .enter().append("rect")
 		                            .attr("height",function(d){return y_uniq(d[0]) - y_uniq(d[1]);})
 		                            .attr("x", function(d,i){return x_uniq(uniq_key[1]) - (y_axis_uniq(1)/2);})
-		                            .attr("y", function(d){return y_uniq(d[1]) - common_plot_height - line_height_scale(cactus_meta.common) - line_height_scale(cactus_meta.only_tumor);})
+		                            .attr("y", function(d){return y_uniq(d[1]) - common_plot_height - line_height_scale(cactus_meta.common) - line_height_scale(cactus_meta.only_tumor);})	                            
 		                            .attr("width", y_axis_uniq(1))
 	
 		svg.append("g").attr('transform', `translate(0, ${InnerHeight})`)
