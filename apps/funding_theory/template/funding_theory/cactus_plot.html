@@ -72,6 +72,9 @@
 		$('#tinymce_form').submit(function(e){
 
 			$('button#submit').attr('disabled','true')
+			$('.remove_this').remove()
+			$('#svg_download_scale_1').remove()
+			$('#svg_download_scale_2').remove()
 			var content1 = tinyMCE.get('text_1').getContent();
 			var content2 = tinyMCE.get('text_2').getContent();
 			var data1 = content1.split('<p>').join('').split('</p>').join('').split('&nbsp;').join('');
@@ -172,19 +175,17 @@
 	            .attr("height",y_uniq(0) - y_uniq(0.5))
 	            .attr("x", x_uniq('random_1'))
 	            .attr("y", 292)	                            
-	            .attr("width", y_axis_uniq(1));		
-
-			// svg2.append("g").attr('transform', `translate(0, ${InnerHeight})`)
-		 //                .style("font", "15px sans").call(d3.axisBottom(x_uniq)
-		 //                                                   .tickFormat(function(d,i){if(i==2||i==3){ return _.toUpper(d); }}));
-
-			// svg2.selectAll(`#scale_2 .tick  line`).attr("stroke", (d,i)=>(i==2||i==3)?"rgba(0,0,0,1)":"rgba(0,0,0,0)"); 	 
+	            .attr("width", y_axis_uniq(1));			 
 
 			svg2.append("g").style("font", "15px sans").call(d3.axisLeft(y_uniq)
 																.ticks(5));		            
 
 			download_link('svg_download_scale_1', 'scale_1');
 			download_link('svg_download_scale_2', 'scale_2');
+
+			$('#submit').removeAttr('disabled')
+			clearAllContentEditor()		
+
 			return false;
 		});
 
@@ -196,7 +197,7 @@
 
 		for(i=0;i<uniq_genes.length;i++){
 					d3.select(`#for_label`).appendHTML(`
-						<span class="tag has-text-dark" style="background-color: ${color_set[uniq_genes[i]]}">${uniq_genes[i]}</span>
+						<span class="tag has-text-dark remove_this" style="background-color: ${color_set[uniq_genes[i]]}">${uniq_genes[i]}</span>
 						`);
 				}
 			}
@@ -208,7 +209,7 @@
 		var loop = _.ceil(length/5);
 		for(i=0;i<loop;i++){
 			d3.select('#for_grid_svg').appendHTML(`
-				<div class="columns" id="row_${i}">
+				<div class="columns remove_this" id="row_${i}">
 				</div>
 				`);
 
@@ -234,7 +235,7 @@
 		var x = 0;
 		for(i=0;i<loop;i++){
 			d3.select('#for_grid_button').appendHTML(`
-				<div class="columns" id="button_row_${i}">
+				<div class="columns remove_this" id="button_row_${i}">
 				</div>
 				`);
 
@@ -270,6 +271,15 @@
 		source = '<?xml version="1.0" standalone="no"?>\r\n' + source;
 		var url = "data:image/svg+xml;charset=utf-8,"+encodeURIComponent(source);
 		document.getElementById(`download_${patient_name}`).href = url;	
+	}
+</script>
+
+<script type="text/javascript">
+	function clearAllContentEditor() {
+		for (i = 0; i < tinymce.editors.length; i++) {
+			tinymce.editors[i].setContent("");
+			$("[name='" + tinymce.editors[i].targetElm.name + "']").val("");
+		}
 	}
 </script>
 {% endblock %}
