@@ -107,7 +107,6 @@
 			var cactus_meta = new Array();
 			var max_value = new Array();
 			var max = 0;
-			var min = 0;
 
 			generate_tags(uniq_genes, color_set);
 			generate_grid_svg(uniq_patients.length, uniq_patients);
@@ -121,7 +120,6 @@
 				max_value[i] = _.sum(_.map(cactus_data[i],d=>d.VAF),cactus_meta[i][0].common,cactus_meta[i][0].only_lk,cactus_meta[i][0].only_tumor);
 			}
 			max = _.max(max_value);
-			min = _.min(max_value);
 
 			for(aa=0;aa<uniq_patients.length;aa++){
 					cactus_plot(cactus_data[aa], cactus_meta[aa][0], uniq_genes,  max_angle, min_angle, max_line_height, min_line_height, max, color_set);
