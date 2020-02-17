@@ -19,7 +19,15 @@
   			<div class="columns">
   				<div class="column"> <textarea class="tinymce_textarea" id="text"></textarea> </div>
   				<div class="column"> 
-  					<pre></pre>
+  					<button class="button is-rounded" onclick="myFunction()">
+  						<span class="icon">
+							<i class="fas fa-copy"></i>
+  						</span>
+  						<span>
+  							Copy
+  						</span>
+  					</button>
+  					<pre id="copy"></pre>
   				</div>
   			</div>
   				<br>
@@ -34,6 +42,7 @@
 	</div>
 </section>
 
+<script src="https://cdn.rawgit.com/Keyang/node-csvtojson/d41f44aa/browser/csvtojson.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
 
@@ -43,11 +52,19 @@
 			var data = content.split('<p>').join('').split('</p>').join('').split('&nbsp;').join('');
 			var data_json = CSVJSON.csv2json(data,{parseNumbers: true});
 			$('pre').html(JSON.stringify(data_json, undefined, 4));
-
 			return false;
 		});
 
 	});
+</script>
+
+<script type="text/javascript">
+	function myFunction(){
+		var copyText = document.getElementById("copy");
+		// copyText.select();
+		// document.execCommand("copy");
+		console.log(JSON.parse(copyText.innerText));		
+	}
 </script>
 
 {% endblock %}

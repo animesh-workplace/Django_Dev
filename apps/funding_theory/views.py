@@ -10,3 +10,6 @@ def cactus_plot_view(request, *args, **kwargs):
 
 def csv2json_view(request, *args, **kwargs):
 	return render(request, "funding_theory/csv2json.html", {})
+
+def pdf_view(request, *args, **kwargs):
+	return render(request, "funding_theory/pdf.html", {})

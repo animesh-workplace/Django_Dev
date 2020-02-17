@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"copy",
+				"copyText"
+			],
+			[
+				"cop",
+				"copyText"
+			],
+			[
+				"spli",
+				"splitTitle"
+			],
+			[
+				"page",
+				"pageHeight"
+			],
+			[
+				"stack_",
+				"stack_common"
+			],
+			[
+				"uniq",
+				"uniq_lk_data"
+			],
+			[
+				"common_da",
+				"common_data_stack"
+			],
+			[
+				"uniq_",
+				"uniq_tumor_data"
+			],
+			[
 				"svg_down",
 				"svg_download_scale_1"
 			],
@@ -30,10 +62,6 @@
 			[
 				"new",
 				"new_gene_name"
-			],
-			[
-				"uniq",
-				"uniq_genes"
 			],
 			[
 				"common_plo",
@@ -360,21 +388,21 @@
 	"buffers":
 	[
 		{
-			"file": "apps/funding_theory/template/funding_theory/cactus_plot.html",
+			"file": "apps/funding_theory/template/funding_theory/csv2json.html",
 			"settings":
 			{
-				"buffer_size": 25193,
+				"buffer_size": 1767,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "apps/funding_theory/static/funding_theory/js/d3_cactus.js",
+			"file": "apps/funding_theory/static/funding_theory/css/styles.css",
 			"settings":
 			{
-				"buffer_size": 12961,
+				"buffer_size": 449,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -422,27 +450,34 @@
 		"/home/icgc/Development/Django_Dev/all_development",
 		"/home/icgc/Development/Django_Dev/apps",
 		"/home/icgc/Development/Django_Dev/apps/funding_theory",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/static",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/static/funding_theory",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/static/funding_theory/css",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/static/funding_theory/js",
 		"/home/icgc/Development/Django_Dev/apps/funding_theory/template",
 		"/home/icgc/Development/Django_Dev/apps/funding_theory/template/funding_theory"
 	],
 	"file_history":
 	[
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/template/funding_theory/base.html",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/template/funding_theory/pdf.html",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/template/funding_theory/cactus_plot.html",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/template/funding_theory/index.html",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/template/funding_theory/csv2json.html",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/urls.py",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/views.py",
 		"/home/icgc/Development/Django_Dev/all_development/settings.py",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/static/funding_theory/js/csvjson.min.js",
+		"/home/icgc/Development/Django_Dev/apps/funding_theory/static/funding_theory/js/d3_cactus.js",
+		"/home/icgc/Development/Django_Dev/README.md",
 		"/home/icgc/Development/Django_Dev/apps/funding_theory/tasks.py",
 		"/home/icgc/Development/Django_Dev/apps/funding_theory/admin.py",
 		"/home/icgc/Development/Django_Dev/all_development/celery.py",
 		"/home/icgc/Development/Django_Dev/.gitignore",
-		"/home/icgc/Development/Django_Dev/apps/funding_theory/static/funding_theory/js/d3_cactus.js",
-		"/home/icgc/Development/Django_Dev/apps/funding_theory/template/funding_theory/index.html",
-		"/home/icgc/Development/Django_Dev/apps/funding_theory/template/funding_theory/base.html",
 		"/home/icgc/Development/Django_Dev/all_development/__init__.py",
 		"/home/icgc/Development/Django_Dev/apps/funding_theory/models.py",
-		"/home/icgc/Development/Django_Dev/apps/funding_theory/views.py",
-		"/home/icgc/Development/Django_Dev/apps/funding_theory/urls.py",
 		"/home/icgc/Development/Django_Dev/apps/funding_theory/static/funding_theory/css/styles.css",
-		"/home/icgc/Development/Django_Dev/apps/funding_theory/template/funding_theory/csv2json.html",
 		"/home/icgc/Development/Django_Dev/all_development/urls.py",
-		"/home/icgc/Development/Django_Dev/apps/funding_theory/template/funding_theory/cactus_plot.html",
 		"/home/icgc/Development/Django_Dev/color_scheme",
 		"/home/icgc/Development/Django_Dev/apps/funding_theory/static/funding_theory/js/d3_cactus7.js",
 		"/home/icgc/Development/Django_Dev/apps/funding_theory/template/funding_theory/test.html",
@@ -486,6 +521,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			",",
+			"min",
+			"new_gene_name",
+			"stack(",
 			"attr",
 			"#922329",
 			"article",
@@ -533,271 +572,21 @@
 			[
 				{
 					"buffer": 0,
-					"file": "apps/funding_theory/template/funding_theory/cactus_plot.html",
+					"file": "apps/funding_theory/template/funding_theory/csv2json.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 25193,
+						"buffer_size": 1767,
 						"regions":
 						{
-							"col_00000001":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										22419,
-										22432
-									]
-								],
-								"scope": "col_00000001"
-							},
-							"col_00000001_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_00000001_circle.png",
-								"regions":
-								[
-									[
-										22322,
-										22322
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_000000FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										22403,
-										22416
-									]
-								],
-								"scope": "col_000000FF"
-							},
-							"col_000000FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_000000FF_circle.png",
-								"regions":
-								[
-									[
-										22322,
-										22322
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_659B91FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										18764,
-										18771
-									]
-								],
-								"scope": "col_659B91FF"
-							},
-							"col_659B91FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_659B91FF_circle.png",
-								"regions":
-								[
-									[
-										18753,
-										18753
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_6F91D7FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										18560,
-										18567
-									]
-								],
-								"scope": "col_6F91D7FF"
-							},
-							"col_6F91D7FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_6F91D7FF_circle.png",
-								"regions":
-								[
-									[
-										18531,
-										18531
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_96DDE7FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										18594,
-										18601
-									]
-								],
-								"scope": "col_96DDE7FF"
-							},
-							"col_96DDE7FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_96DDE7FF_circle.png",
-								"regions":
-								[
-									[
-										18531,
-										18531
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_984EA3FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										18742,
-										18749
-									]
-								],
-								"scope": "col_984EA3FF"
-							},
-							"col_984EA3FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_984EA3FF_circle.png",
-								"regions":
-								[
-									[
-										18679,
-										18679
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_999AE1FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										18706,
-										18713
-									]
-								],
-								"scope": "col_999AE1FF"
-							},
-							"col_999AE1FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_999AE1FF_circle.png",
-								"regions":
-								[
-									[
-										18679,
-										18679
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_A9DDC5FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										18576,
-										18583
-									]
-								],
-								"scope": "col_A9DDC5FF"
-							},
-							"col_A9DDC5FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_A9DDC5FF_circle.png",
-								"regions":
-								[
-									[
-										18531,
-										18531
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_B8E067FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										18567,
-										18567
-									]
-								],
-								"scope": "col_B8E067FF"
-							},
-							"col_B8E067FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_B8E067FF_circle.png",
-								"regions":
-								[
-									[
-										18531,
-										18531
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_BEBADAFF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										18635,
-										18642
-									]
-								],
-								"scope": "col_BEBADAFF"
-							},
-							"col_BEBADAFF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_BEBADAFF_circle.png",
-								"regions":
-								[
-									[
-										18605,
-										18605
-									]
-								],
-								"scope": "col_gutter"
-							},
 							"col_C0C0C0FF":
 							{
 								"flags": 16,
 								"regions":
 								[
 									[
-										1681,
-										1687
+										176,
+										182
 									]
 								],
 								"scope": "col_C0C0C0FF"
@@ -809,158 +598,8 @@
 								"regions":
 								[
 									[
-										1667,
-										1667
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_DE407BFF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										18689,
-										18696
-									]
-								],
-								"scope": "col_DE407BFF"
-							},
-							"col_DE407BFF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_DE407BFF_circle.png",
-								"regions":
-								[
-									[
-										18679,
-										18679
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_F88F6FFF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										18617,
-										18624
-									]
-								],
-								"scope": "col_F88F6FFF"
-							},
-							"col_F88F6FFF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_F88F6FFF_circle.png",
-								"regions":
-								[
-									[
-										18605,
-										18605
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_F9F871FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										18542,
-										18549
-									]
-								],
-								"scope": "col_F9F871FF"
-							},
-							"col_F9F871FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_F9F871FF_circle.png",
-								"regions":
-								[
-									[
-										18531,
-										18531
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_FB9A99FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										18652,
-										18659
-									]
-								],
-								"scope": "col_FB9A99FF"
-							},
-							"col_FB9A99FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_FB9A99FF_circle.png",
-								"regions":
-								[
-									[
-										18605,
-										18605
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_FCCDE5FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										18725,
-										18732
-									]
-								],
-								"scope": "col_FCCDE5FF"
-							},
-							"col_FCCDE5FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_FCCDE5FF_circle.png",
-								"regions":
-								[
-									[
-										18679,
-										18679
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_FFC6A3FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										18668,
-										18675
-									]
-								],
-								"scope": "col_FFC6A3FF"
-							},
-							"col_FFC6A3FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_FFC6A3FF_circle.png",
-								"regions":
-								[
-									[
-										18605,
-										18605
+										164,
+										164
 									]
 								],
 								"scope": "col_gutter"
@@ -969,8 +608,8 @@
 						"selection":
 						[
 							[
-								24651,
-								24651
+								1709,
+								1709
 							]
 						],
 						"settings":
@@ -978,7 +617,7 @@
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 6768.0,
+						"translation.y": 456.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -986,174 +625,159 @@
 				},
 				{
 					"buffer": 1,
-					"file": "apps/funding_theory/static/funding_theory/js/d3_cactus.js",
+					"file": "apps/funding_theory/static/funding_theory/css/styles.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 12961,
+						"buffer_size": 449,
 						"regions":
 						{
-							"col_00000001":
+							"col_00000008":
 							{
 								"flags": 16,
 								"regions":
 								[
 									[
-										12593,
-										12606
+										168,
+										188
 									]
 								],
-								"scope": "col_00000001"
+								"scope": "col_00000008"
 							},
-							"col_00000001_icon":
+							"col_00000008_icon":
 							{
 								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_00000001_circle.png",
+								"icon": "Packages/User/Color Highlight.cache/col_00000008_circle.png",
 								"regions":
 								[
 									[
-										12485,
-										12485
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_000000FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										7345,
-										7350
-									],
-									[
-										8200,
-										8205
-									],
-									[
-										9109,
-										9114
-									],
-									[
-										9984,
-										9989
-									],
-									[
-										10444,
-										10449
-									],
-									[
-										12577,
-										12590
-									]
-								],
-								"scope": "col_000000FF"
-							},
-							"col_000000FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_000000FF_circle.png",
-								"regions":
-								[
-									[
-										7318,
-										7318
-									],
-									[
-										8164,
-										8164
-									],
-									[
-										9074,
-										9074
-									],
-									[
-										9942,
-										9942
-									],
-									[
-										10409,
-										10409
-									],
-									[
-										12485,
-										12485
+										152,
+										152
 									]
 								],
 								"scope": "col_gutter"
 							},
-							"col_A4E804FF":
+							"col_0000000C":
 							{
 								"flags": 16,
 								"regions":
 								[
 									[
-										8631,
-										8638
+										206,
+										226
 									]
 								],
-								"scope": "col_A4E804FF"
+								"scope": "col_0000000C"
 							},
-							"col_A4E804FF_icon":
+							"col_0000000C_icon":
 							{
 								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_A4E804FF_circle.png",
+								"icon": "Packages/User/Color Highlight.cache/col_0000000C_circle.png",
 								"regions":
 								[
 									[
-										8596,
-										8596
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_F277C6FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										9570,
-										9577
-									]
-								],
-								"scope": "col_F277C6FF"
-							},
-							"col_F277C6FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_F277C6FF_circle.png",
-								"regions":
-								[
-									[
-										9534,
-										9534
+										190,
+										190
 									]
 								],
 								"scope": "col_gutter"
 							},
-							"col_FFEA00FF":
+							"col_0000000F":
 							{
 								"flags": 16,
 								"regions":
 								[
 									[
-										7780,
-										7787
+										244,
+										263
 									]
 								],
-								"scope": "col_FFEA00FF"
+								"scope": "col_0000000F"
 							},
-							"col_FFEA00FF_icon":
+							"col_0000000F_icon":
 							{
 								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_FFEA00FF_circle.png",
+								"icon": "Packages/User/Color Highlight.cache/col_0000000F_circle.png",
 								"regions":
 								[
 									[
-										7744,
-										7744
+										228,
+										228
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_00000012":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										283,
+										303
+									]
+								],
+								"scope": "col_00000012"
+							},
+							"col_00000012_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_00000012_circle.png",
+								"regions":
+								[
+									[
+										265,
+										265
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_00000015":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										323,
+										343
+									]
+								],
+								"scope": "col_00000015"
+							},
+							"col_00000015_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_00000015_circle.png",
+								"regions":
+								[
+									[
+										305,
+										305
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_0000001E":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										360,
+										379
+									]
+								],
+								"scope": "col_0000001E"
+							},
+							"col_0000001E_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_0000001E_circle.png",
+								"regions":
+								[
+									[
+										345,
+										345
 									]
 								],
 								"scope": "col_gutter"
@@ -1162,17 +786,18 @@
 						"selection":
 						[
 							[
-								8737,
-								8737
+								446,
+								446
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3762.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1244,7 +869,7 @@
 		[
 			[
 				"",
-				"/home/icgc/Desktop/WEBSITE/Website_design/workshop.sublime-project"
+				"/home/icgc/Development/Django_Testing/Django_Testing.sublime-workspace"
 			]
 		],
 		"width": 380.0

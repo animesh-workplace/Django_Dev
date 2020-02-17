@@ -21,4 +21,5 @@ a.box:focus, a.box:hover{
 pre{
   overflow: auto;
   max-height: 400px;
+  max-width: 666px;
 }
