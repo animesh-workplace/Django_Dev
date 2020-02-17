@@ -1,0 +1,95 @@
+{% extends 'funding_theory/base.html' %}
+
+{% block content %}
+<script type="text/javascript">
+	tinymce.init({
+		selector	: '.tinymce_textarea',
+		branding	: false,
+		theme		: 'silver',
+		menubar		: false,
+		statusbar	: false, 
+		height		: '400',
+	});
+</script>
+
+<section class="section">
+  <div class="container">
+
+  		<form method="post" id="tinymce_form"> {% csrf_token %}
+  			<div class="columns">
+  				<div class="column"> 
+  					<textarea class="tinymce_textarea" id="text"></textarea> 
+  				</div>
+  			</div>
+  				<br>
+  				<button class="button is-primary is-rounded is-fullwidth" type="submit">Submit</button>
+  		</form>
+
+  </div>    
+</section>
+
+<section class="section">
+	<div class="container" id="for_grid">
+	</div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('#tinymce_form').submit(function(e){
+
+			var content = tinyMCE.get('text').getContent();
+			var data = content.split('<p>').join('').split('</p>').join('').split('&nbsp;').join('');
+			data = JSON.parse(data);
+
+			var doc = new jsPDF()
+			doc.setFontSize(11);
+			data.forEach(function(employee, i){	
+				var pageText = `Personal Details:\n\nName: ${employee['pName']}\nInstitute Name/ Company name: ${employee['Institute Name/ Company name']}\nDesignation: ${employee['Designation']}\nEmail Address: ${employee['Email Address']}\nMobile number: ${employee['Mobile number']}\nGender: ${employee['Gender (For accommodation)']}\nWould you like to apply for the registration fee waiver:\t${employee['Would you like to apply for the registration fee waiver']}\n\n`;
+				if(employee['Designation']!='Faculty'){
+					pageText += `Mentor's Detail:\nName: ${employee['mName']}\nEmail: ${employee['Email']}\n\n`;
+				}
+				if(i==16){
+					pageText += `Research Interest:\n\nAre you working in the field of Human Genetics? ${employee['Are you working in the field of Human Genetics?']}\nIf yes, provide details for the above:\n${employee['If yes, provide details for the above1']}\nPlease indicate one or more of the following data types currently being analyzed by you?\n${employee['Please indicate one or more of the following data types currently being analyzed by you?']}\nHave you taken any formal course in Human Genetics?: ${employee['Have you taken any formal course in Human Genetics?']}\nIf yes, provide details for the above:\n${employee['If yes, provide details for the above2']}\nHave you taken any formal course in Statistics/ Maths/ Computer Science? ${employee['Have you taken any formal course in Statistics/ Maths/ Computer Science?']}\nIf yes, provide details for the above:\n${employee['If yes, provide details for the above3']}\nArea of Interest:\n${employee['Area of Interest']}\nWhich language do you know?:\n${employee['Which language do you know?']}\nMotivation to attend the workshop:\n${employee['Motivation to attend the workshop']}`;
+					var extrapage = `\nWhat do you expect from this workshop?:\n${employee['What do you expect from this workshop?']}\n`;
+					var splitTitle = doc.splitTextToSize(pageText, 180);
+					var splitTitle2 = doc.splitTextToSize(extrapage, 180);
+					doc.text(20, 20, `Participant ${i+1}`);
+			    	doc.text(20, 25, splitTitle);
+			    	doc.addPage();
+			    	doc.text(20, 20, splitTitle2);
+			    	doc.addPage();
+				}
+				else{
+					pageText += `Research Interest:\n\nAre you working in the field of Human Genetics? ${employee['Are you working in the field of Human Genetics?']}\nIf yes, provide details for the above:\n${employee['If yes, provide details for the above1']}\nPlease indicate one or more of the following data types currently being analyzed by you?\n${employee['Please indicate one or more of the following data types currently being analyzed by you?']}\nHave you taken any formal course in Human Genetics?: ${employee['Have you taken any formal course in Human Genetics?']}\nIf yes, provide details for the above:\n${employee['If yes, provide details for the above2']}\nHave you taken any formal course in Statistics/ Maths/ Computer Science? ${employee['Have you taken any formal course in Statistics/ Maths/ Computer Science?']}\nIf yes, provide details for the above:\n${employee['If yes, provide details for the above3']}\nArea of Interest:\n${employee['Area of Interest']}\nWhich language do you know?:\n${employee['Which language do you know?']}\nMotivation to attend the workshop:\n${employee['Motivation to attend the workshop']}\nWhat do you expect from this workshop?:\n${employee['What do you expect from this workshop?']}\n`;
+					var lineHeight = doc.getLineHeight(text);
+				    var splitTitle = doc.splitTextToSize(pageText, 180);
+				    var lines = splitTitle.length;
+				    var blockHeight = lines * lineHeight
+				    // console.log.bind(blockHeight);
+				    doc.text(20, 20, `Participant ${i+1}`);
+				    doc.text(20, 25, splitTitle);
+				    doc.addPage();					
+				}			
+
+			    
+			});
+			doc.save('Contact.pdf')
+			clearAllContentEditor();
+			return false;
+		});
+
+	});
+</script>
+
+<script type="text/javascript">
+	function clearAllContentEditor() {
+		for (i = 0; i < tinymce.editors.length; i++) {
+			tinymce.editors[i].setContent("");
+			$("[name='" + tinymce.editors[i].targetElm.name + "']").val("");
+		}
+	}
+</script>
+
+{% endblock %}
